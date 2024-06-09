@@ -13,7 +13,7 @@ const Blog = z.object({
   metaKeywords: z.string().min(1, "Meta keywords are required"),
 });
 
-export async function POST(req: { json: () => unknown; cookies: { get: (arg0: string) => any; }; }) {
+export async function POST(req: any) {
   try {
     const data = Blog.parse(await req.json());
     const token = req.cookies.get('token');

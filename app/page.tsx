@@ -22,7 +22,8 @@ export default function App() {
             Learn More
           </button>
          
-      
+      <div className="hidden sm:block">
+
       <InfiniteMovingCards speed="slow" items={[
         {
           quote: "we are the best ",
@@ -53,6 +54,7 @@ export default function App() {
       ]}></InfiniteMovingCards>
 
       
+      </div>
     </div>
     
   </GridBackground>

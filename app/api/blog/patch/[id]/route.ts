@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
-import { z } from 'zod';
+import { NextResponse } from "next/server";
+import { PrismaClient } from "@prisma/client";
+import { z } from "zod";
 
 const prisma = new PrismaClient();
 
@@ -13,43 +13,33 @@ const Blog = z.object({
   metaKeywords: z.string().min(1, "Meta keywords are required"),
 });
 
-export async function POST(req: { json: () => unknown; cookies: { get: (arg0: string) => any; }; }) {
+export async function PATCH(
+  req: Request,
+  { params }: { params: { id: string } }
+) {
   try {
     const data = Blog.parse(await req.json());
-    const token = req.cookies.get('token');
-    if (!token) {
-      return NextResponse.json(
-        {
-          status: 401,
-          data: null,
-          message: "Token not provided",
-        },
-        { status: 401 }
-      );
-    }
-
-    const blogCreated = await prisma.post.create({
+    const blog = await prisma.post.update({
+      where: { id: params.id },
       data: {
         ...data,
-        createdAt: new Date(),
         updatedAt: new Date(),
       },
     });
-
     return NextResponse.json(
       {
-        status: 201,
-        data: blogCreated,
-        message: "Blog created successfully",
+        status: 200,
+        data: blog,
+        message: "Blog updated successfully",
       },
-      { status: 201 }
+      { status: 200 }
     );
   } catch (err) {
     return NextResponse.json(
       {
         status: 500,
         data: null,
-        message: "An error occurred while creating the blog",
+        message: "An error occurred while updating the blog",
       },
       { status: 500 }
     );

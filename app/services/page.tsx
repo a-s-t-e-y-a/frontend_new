@@ -15,6 +15,8 @@ import img8 from '@/public/futurism-perspective-digital-nomads-lifestyle.jpg'
 import img9 from '@/public/daniel-thomas-gWlBxOAgXgQ-unsplash.jpg'
 import img10 from '@/public/mika-baumeister-jRYWelZhhGg-unsplash.jpg'
 import img11 from '@/public/high-angle-hand-correcting-grammar-mistakes.jpg'
+import img12 from '@/public/artwork.jpg'
+import { Footer } from "../components/footer";
 
 
 export default function Page() {
@@ -159,9 +161,11 @@ export default function Page() {
             </div>
             <div>
 
-            <h2>Image Processing and Artworks</h2>
-            <p>We have the expertise to convert figures from any graphic and non-graphic applications to print- and web-ready image formats. This includes enhancement of colors, labeling, re-drawing, and proofing, among others.</p>
+            <h2 className="text-center text-4xl font-bold my-10">Image Processing and Artworks</h2>
+            <p className="text-center w-1/2 m-auto">We have the expertise to convert figures from any graphic and non-graphic applications to print- and web-ready image formats. This includes enhancement of colors, labeling, re-drawing, and proofing, among others.</p>
             </div>
+            <Image src={img12} alt="artwork" className="m-auto mt-10 rounded-md"></Image>
+            <Footer></Footer>
         </div>
 
     )

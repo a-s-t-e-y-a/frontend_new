@@ -18,11 +18,11 @@ const menuItems = [
   },
   {
     name: 'Careers',
-    href: '#',
+    href: '/careers',
   },
   {
     name: 'Contact',
-    href: '#',
+    href: '/contact',
   },
 ]
 

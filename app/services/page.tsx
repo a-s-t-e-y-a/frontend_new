@@ -19,6 +19,7 @@ import img12 from '@/public/artwork.jpg'
 import { Footer } from "../components/footer";
 import { Meteors } from "../components/ui/meteors";
 import { MeteorsDemo } from "../components/meteor";
+import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 
 
 export default function Page() {
@@ -50,7 +51,7 @@ export default function Page() {
             </div>
             <h2 className="text-4xl text-center my-10 font-bold">Project Management</h2>
             <div className="grid grid-cols-2 px-24 justify-items-center">
-                <Image src={img7} alt='Project Management' className="h-[400px] w-[600px]  object-cover"></Image>
+                <Image src={img7} alt='Project Management' className="h-[400px] w-[600px]  object-cover rounded-lg"></Image>
                 <p className="text-balance p-24">
                     With the ever-evolving landscape of the publishing industry, effective project management ensures the successful execution of complex publishing projects, from manuscript to final product. This involves overseeing the entire process, coordinating various stakeholders, and ensuring the timely delivery of high-quality publications.
 
@@ -73,32 +74,7 @@ export default function Page() {
                 <MeteorsDemo title="Budget & Risk Management" dis="We identify potential risks, develop mitigation strategies, and manage project budgets." link="#"></MeteorsDemo>
                 <MeteorsDemo title="Post-Project Evaluation" dis="We gather feedback, identify improvement areas, and optimize workflows leveraging technology." link="#"></MeteorsDemo>
                 </div>
-                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Defining Scope & Planning</h3>
-                        <p className="text-gray-700">We work with you to define project scope, services, and deliverables, allocating resources like editors and designers.</p>
-                    </div>
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Scheduling</h3>
-                        <p className="text-gray-700">We create timelines, monitor progress, address delays, and adjust schedules as needed.</p>
-                    </div>
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Communication</h3>
-                        <p className="text-gray-700">We act as a central point of contact, manage expectations, and resolve conflicts between teams.</p>
-                    </div>
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Quality Assurance</h3>
-                        <p className="text-gray-700">We establish quality control processes, conduct reviews, and ensure adherence to guidelines.</p>
-                    </div>
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Budget & Risk Management</h3>
-                        <p className="text-gray-700">We identify potential risks, develop mitigation strategies, and manage project budgets.</p>
-                    </div>
-                    <div className="p-4 border border-gray-200 rounded-md">
-                        <h3 className="text-lg font-bold mb-2">Post-Project Evaluation</h3>
-                        <p className="text-gray-700">We gather feedback, identify improvement areas, and optimize workflows leveraging technology.</p>
-                    </div>
-                </div> */}
+            
             </div>
 
 
@@ -113,7 +89,9 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex items-center">
-                    <Image src={img8} alt='Project Management' className="h-[400px] w-[600px] object-cover" />
+                    {/* <Image src={img8} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
+                    <DirectionAwareHover imageUrl={img8} children={undefined}>
+      </DirectionAwareHover>
                 </div>
             </div>
 
@@ -121,7 +99,9 @@ export default function Page() {
 
             <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
                 <div className="flex items-center">
-                    <Image src={img9} alt='Project Management' className="h-[400px] w-[600px] object-cover" />
+                    {/* <Image src={img9} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
+                    <DirectionAwareHover imageUrl={img9} children={undefined}>
+                    </DirectionAwareHover>
                 </div>
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
@@ -148,14 +128,19 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex items-center">
-                    <Image src={img10} alt='Project Management' className="h-[400px] w-[600px] object-cover" />
+                    {/* <Image src={img10} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" />
+                     */}
+                      <DirectionAwareHover imageUrl={img10} children={undefined}>
+                      </DirectionAwareHover>
                 </div>
             </div>
 
 
             <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
                 <div className="flex items-center">
-                    <Image src={img11} alt='Project Management' className="h-[400px] w-[600px] object-cover" />
+                    {/* <Image src={img11} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
+                    <DirectionAwareHover imageUrl={img11} children={undefined}>
+                    </DirectionAwareHover>
                 </div>
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">

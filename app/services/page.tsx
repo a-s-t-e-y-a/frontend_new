@@ -17,6 +17,8 @@ import img10 from '@/public/mika-baumeister-jRYWelZhhGg-unsplash.jpg'
 import img11 from '@/public/high-angle-hand-correcting-grammar-mistakes.jpg'
 import img12 from '@/public/artwork.jpg'
 import { Footer } from "../components/footer";
+import { Meteors } from "../components/ui/meteors";
+import { MeteorsDemo } from "../components/meteor";
 
 
 export default function Page() {
@@ -62,7 +64,16 @@ export default function Page() {
             </div>
             <div className="container mx-auto  px-4 py-10">
                 <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-wrap gap-10 justify-center">
+                    
+                <MeteorsDemo title="Defining Scope & Planning" dis="We work with you to define project scope, services, and deliverables, allocating resources like editors and designers." link="#"></MeteorsDemo>
+                <MeteorsDemo title="Scheduling" dis="We create timelines, monitor progress, address delays, and adjust schedules as needed." link="#"></MeteorsDemo>
+                <MeteorsDemo title="Communication" dis="We act as a central point of contact, manage expectations, and resolve conflicts between teams." link="#"></MeteorsDemo>
+                <MeteorsDemo title="Quality Assurance" dis="We establish quality control processes, conduct reviews, and ensure adherence to guidelines." link="#"></MeteorsDemo>
+                <MeteorsDemo title="Budget & Risk Management" dis="We identify potential risks, develop mitigation strategies, and manage project budgets." link="#"></MeteorsDemo>
+                <MeteorsDemo title="Post-Project Evaluation" dis="We gather feedback, identify improvement areas, and optimize workflows leveraging technology." link="#"></MeteorsDemo>
+                </div>
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 border border-gray-200 rounded-md">
                         <h3 className="text-lg font-bold mb-2">Defining Scope & Planning</h3>
                         <p className="text-gray-700">We work with you to define project scope, services, and deliverables, allocating resources like editors and designers.</p>
@@ -87,7 +98,7 @@ export default function Page() {
                         <h3 className="text-lg font-bold mb-2">Post-Project Evaluation</h3>
                         <p className="text-gray-700">We gather feedback, identify improvement areas, and optimize workflows leveraging technology.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
 

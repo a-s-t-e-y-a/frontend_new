@@ -134,11 +134,11 @@ export default function About() {
           ))}
         </div>
         <hr className="my-20" />
-        <div className='flex justify-center align-middle'>
+        <div className='flex flex-wrap gap-36 justify-center align-middle'>
 
-        <div>
-          <h1 className='text-2xl my-6 font-bold text-black'>Why Choose Us?</h1>
-          <p>In today’s content marketplace, the choices seem endless. Many companies boast of efficiencies derived from ideal-case scenarios filled with technological jargon. However, reality often differs from the ideal. At eVC-Tech, we recognize that clients need solutions that add genuine value to their processes and products, going beyond what off-the-shelf options can offer. There’s a significant gap between the bespoke needs of clients and the one-size-fits-all offerings from big vendors. Bridging this gap is our mission.
+        <div className='w-1/2 '>
+          <h1 className='text-2xl my-6 font-bold  text-black'>Why Choose Us?</h1>
+          <p className='text-justify'>In today’s content marketplace, the choices seem endless. Many companies boast of efficiencies derived from ideal-case scenarios filled with technological jargon. However, reality often differs from the ideal. At eVC-Tech, we recognize that clients need solutions that add genuine value to their processes and products, going beyond what off-the-shelf options can offer. There’s a significant gap between the bespoke needs of clients and the one-size-fits-all offerings from big vendors. Bridging this gap is our mission.
 
             Customization is at the heart of our services. We don’t push generic solutions. Instead, we take the time to understand each client’s unique requirements, considering their evolving markets and business models. We approach every project with an open mind, designing our processes and services to align with our clients’ objectives. By integrating cutting-edge tools and leveraging the rich knowledge of our subject-matter experts (SMEs), we not only deliver quality products on time but also enhance their overall value.
 
@@ -148,7 +148,7 @@ export default function About() {
         </div>
         <hr className='my-20'></hr>
         {/* greetings */}
-        <div className="mt-16 flex items-center">
+        {/* <div className="mt-16 flex items-center">
           <div className="space-y-6 md:w-3/4">
             <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
               <p className="text-xs font-semibold leading-normal md:text-sm">Join Us &rarr;</p>
@@ -161,9 +161,9 @@ export default function About() {
             <div></div>
           </div>
         </div>
-        
+         */}
         {/* TEAM */}
-        <div className="grid grid-cols-1 gap-4 gap-y-6 border-b border-gray-300 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
+        {/* <div className="grid grid-cols-1 gap-4 gap-y-6 border-b border-gray-300 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
           {users.map((user) => (
             <div className="rounded-md border" key={user.name}>
               <img
@@ -177,9 +177,9 @@ export default function About() {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
         {/* Hiring Banner */}
-        <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
+        {/* <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
           <div className="space-y-6">
             <p className="text-sm font-semibold md:text-base">Join our team &rarr;</p>
             <p className="text-3xl font-bold md:text-4xl">We&apos;re just getting started</p>
@@ -201,10 +201,13 @@ export default function About() {
               className="rounded-lg"
             />
           </div>
-        </div>
+        </div> */}
       </div>
-      <hr className="mt-6" />
+      {/* <hr className="mt-6" /> */}
       {/* footer */}
+      <div>
+      <h2 className='text-center'>Our team has extensive experience in delivering the highest level of quality across a range of services, such as:</h2>
+      </div>
       <Footer></Footer>
     </div>
   )

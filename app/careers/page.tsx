@@ -5,6 +5,8 @@ import { GridBackground } from "../components/ui/gridbackground";
 import Link from 'next/link';
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
+import { MeteorsCard } from '../components/meteor2';
+// import { Meteors } from '../components/ui/meteors';
 
 export default function Careers() {
     return (
@@ -21,8 +23,10 @@ export default function Careers() {
             </GridBackground>
             <h1 className='text-4xl font-bold mt-10 text-center'>Job Openings</h1>
             <div className='flex flex-wrap gap-10 w-2/3 m-auto my-20'>
-                <Card title="Frontend Developer" description="Work on the frontend..." link="/apply/frontend" />
-                <Card title="Backend Developer" description="Work on the backend..." link="/apply/backend" />
+                <MeteorsCard title='Frontend Developer' dis="Work on the frontend..." link="/apply/frontend"></MeteorsCard>
+                <MeteorsCard title='Backend Developer' dis="Work on the backend..." link="/apply/frontend"></MeteorsCard>
+                {/* <Card title="Frontend Developer" description="Work on the frontend..." link="/apply/frontend" /> */}
+                {/* <Card title="Backend Developer" description="Work on the backend..." link="/apply/backend" /> */}
             </div>
             <Footer></Footer>
         </div>

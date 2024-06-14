@@ -90,7 +90,8 @@ export default function Page() {
                 </div>
                 <div className="flex items-center">
                     {/* <Image src={img8} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img8} children={undefined}>
+                    <DirectionAwareHover imageUrl={img8} >
+                        <span></span>
       </DirectionAwareHover>
                 </div>
             </div>
@@ -100,7 +101,8 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
                 <div className="flex items-center">
                     {/* <Image src={img9} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img9} children={undefined}>
+                    <DirectionAwareHover imageUrl={img9}>
+                        <span></span>
                     </DirectionAwareHover>
                 </div>
                 <div className="flex items-center ">
@@ -130,7 +132,8 @@ export default function Page() {
                 <div className="flex items-center">
                     {/* <Image src={img10} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" />
                      */}
-                      <DirectionAwareHover imageUrl={img10} children={undefined}>
+                      <DirectionAwareHover imageUrl={img10} >
+                        <span></span>
                       </DirectionAwareHover>
                 </div>
             </div>
@@ -139,7 +142,8 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
                 <div className="flex items-center">
                     {/* <Image src={img11} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img11} children={undefined}>
+                    <DirectionAwareHover imageUrl={img11}>
+                        <span></span>
                     </DirectionAwareHover>
                 </div>
                 <div className="flex items-center ">

@@ -50,9 +50,9 @@ export default function Page() {
                 <Image src={img6} alt="Project Management" width={150}></Image>
             </div>
             <h2 className="text-4xl text-center my-10 font-bold">Project Management</h2>
-            <div className="grid grid-cols-2 px-24 justify-items-center">
-                <Image src={img7} alt='Project Management' className="h-[400px] w-[600px]  object-cover rounded-lg"></Image>
-                <p className="text-balance p-24">
+            <div className="grid grid-cols-1 sm:grid-cols-2 ">
+                <Image src={img7} alt='Project Management' className="h-[400px] w-[600px] sm:ml-10  scale-90 sm:scale-100 object-cover rounded-lg"></Image>
+                <p className="text-balance p-6  sm:p-24">
                     With the ever-evolving landscape of the publishing industry, effective project management ensures the successful execution of complex publishing projects, from manuscript to final product. This involves overseeing the entire process, coordinating various stakeholders, and ensuring the timely delivery of high-quality publications.
 
                     Our project managers, both onshore and offshore, have proven expertise and attention to detail that has contributed to the success of our client in today’s dynamic and competitive industry.
@@ -78,19 +78,19 @@ export default function Page() {
             </div>
 
 
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-24 mt-32 justify-items-center ">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-6 sm:px-24 mt-32 justify-items-center ">
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
                         <h2 className="text-4xl font-bold my-4">Pre-editing</h2>
-                        <p>
+                        <p className="">
                             Pre-editing is an essential step in preparing any structured and unstructured content for publication. Our pre-editors engage with the content, understand its flow—which is a basic building block for any publication—and then prepare it for the next major steps, such as copyediting, online publication, and typesetting.
                             Organizing the content as per the required order, cleaning up unnecessary items such as double spaces and empty paragraphs, applying styles, ensuring active and correct cross-links, and performing rule-based mechanical edits are some of the key activities performed at this stage, which lays down the foundation for content publication on any platform in any medium.
                         </p>
                     </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center  ">
                     {/* <Image src={img8} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img8} >
+                    <DirectionAwareHover imageUrl={img8} className="scale-150 sm:scale-100 my-10" >
                         <span></span>
       </DirectionAwareHover>
                 </div>
@@ -98,10 +98,10 @@ export default function Page() {
 
 
 
-            <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
+            <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-6 sm:px-24 justify-items-center mt-32">
                 <div className="flex items-center">
                     {/* <Image src={img9} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img9}>
+                    <DirectionAwareHover imageUrl={img9} className="scale-150 sm:scale-100 my-10">
                         <span></span>
                     </DirectionAwareHover>
                 </div>
@@ -118,7 +118,7 @@ export default function Page() {
 
             </div>
 
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-24 justify-items-center mt-32 ">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-6 sm:px-24 justify-items-center mt-32 ">
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
                         <h2 className="text-4xl font-bold my-4">Typesetting</h2>
@@ -132,17 +132,17 @@ export default function Page() {
                 <div className="flex items-center">
                     {/* <Image src={img10} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" />
                      */}
-                      <DirectionAwareHover imageUrl={img10} >
+                      <DirectionAwareHover imageUrl={img10} className="scale-150 sm:scale-100 my-10">
                         <span></span>
                       </DirectionAwareHover>
                 </div>
             </div>
 
 
-            <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-24 justify-items-center mt-32">
+            <div className="grid grid-cols-1 gap-10 bg-gray-200 py-20 lg:grid-cols-2 px-6 sm:px-24 justify-items-center mt-32">
                 <div className="flex items-center">
                     {/* <Image src={img11} alt='Project Management' className="h-[400px] w-[600px] object-cover rounded-lg" /> */}
-                    <DirectionAwareHover imageUrl={img11}>
+                    <DirectionAwareHover imageUrl={img11} className="scale-150 sm:scale-100 my-10">
                         <span></span>
                     </DirectionAwareHover>
                 </div>

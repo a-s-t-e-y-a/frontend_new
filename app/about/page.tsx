@@ -24,20 +24,11 @@ const menuItems = [
 
 const locations = [
   {
-    title: 'Bengaluru office',
+    title: 'Gaziabad office',
     timings: 'Mon-Sat 9am to 5pm.',
-    address: '100, Electronic City Phase-1, Bengaluru, Karnataka 560100 IN',
+    address: 'No. 274, Sec-4, Vaishali, Gaziabad (Delhi-NCR), U.P. 201010, India',
   },
-  {
-    title: 'Head office',
-    timings: 'Mon-Sat 9am to 5pm.',
-    address: '12th Main Rd, Indiranagar, Bengaluru, Karnataka 560008 IN',
-  },
-  {
-    title: 'Karnataka office',
-    timings: 'Mon-Sat 9am to 5pm.',
-    address: '42, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025 IN',
-  },
+  
 ]
 
 const users = [
@@ -116,11 +107,7 @@ export default function About() {
           </p>
         </div>
         <div className="w-full space-y-4">
-          <img
-            className="h-[200px] w-full rounded-xl object-cover md:h-full"
-            src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/google-map.jpg"
-            alt=""
-          />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15409.677329008144!2d77.34361!3d28.648624000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce52cab1b1285%3A0x799c44f014a1af94!2seVC-Tech!5e1!3m2!1sen!2sin!4v1718359615659!5m2!1sen!2sin" width="1200" height="400"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* locations */}
         <div className="my-8 flex flex-col gap-y-6 md:flex-row lg:justify-around">
@@ -136,7 +123,7 @@ export default function About() {
         <hr className="my-20" />
         <div className='flex flex-wrap gap-36 justify-center align-middle'>
 
-        <div className='w-1/2 '>
+        <div className=' px-6 sm:w-1/2 '>
           <h1 className='text-2xl my-6 font-bold  text-black'>Why Choose Us?</h1>
           <p className='text-justify'>In today’s content marketplace, the choices seem endless. Many companies boast of efficiencies derived from ideal-case scenarios filled with technological jargon. However, reality often differs from the ideal. At eVC-Tech, we recognize that clients need solutions that add genuine value to their processes and products, going beyond what off-the-shelf options can offer. There’s a significant gap between the bespoke needs of clients and the one-size-fits-all offerings from big vendors. Bridging this gap is our mission.
 

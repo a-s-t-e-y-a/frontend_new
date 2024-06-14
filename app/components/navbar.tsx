@@ -34,7 +34,7 @@ export function Navbar() {
   }
 
   return (
-    <div className="relative w-full bg-white dark:bg-black  dark:text-white">
+    <div className="relative w-full bg-white text-black ">
       <div className="mx-auto flex max-w-7xl  items-center justify-between px-4 py-8 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>

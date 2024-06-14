@@ -107,7 +107,18 @@ export default function About() {
           </p>
         </div>
         <div className="w-full space-y-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15409.677329008144!2d77.34361!3d28.648624000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce52cab1b1285%3A0x799c44f014a1af94!2seVC-Tech!5e1!3m2!1sen!2sin!4v1718359615659!5m2!1sen!2sin" width="1200" height="400"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+         <div className='flex justify-center'>
+
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7704.838664504072!2d77.34361!3d28.648624000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce52cab1b1285%3A0x799c44f014a1af94!2seVC-Tech!5e1!3m2!1sen!2sin!4v1718194587959!5m2!1sen!2sin"
+  width="1600"
+  height="400"
+  style={{ border: 0 }}
+  
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+  </div>
         </div>
         {/* locations */}
         <div className="my-8 flex flex-col gap-y-6 md:flex-row lg:justify-around">

@@ -5,10 +5,18 @@ import { BackgroundGradient } from "./components/ui/background-gradient";
 import { GridBackground } from "./components/ui/gridbackground";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 import Card from "./components/card";
+import { PinContainer } from "./components/ui/3d-pin";
+import img3 from "@/public/scott-graham-5fNmWej4tAA-unsplash.jpg"
+import Image from "next/image";
+import img4 from '@/public/austin-distel-wD1LRb9OeEo-unsplash.jpg'
+import img5 from '@/public/peter-stumpf-FhZEpxtTI_Y-unsplash.jpg'
+import img6 from '@/public/jess-bailey-q10VITrVYUM-unsplash.jpg'
+import img7 from '@/public/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg'
+import img8 from '@/public/bulb.jpg'
 
 export default function App() {
   return (
-    <>
+    <div className="bg-white text-black">
       <Navbar />
       <GridBackground>
         <div className="flex flex-col items-center space-y-7 ">
@@ -21,50 +29,306 @@ export default function App() {
           >
             Learn More
           </button>
-         
-      <div className="hidden sm:block">
 
-      <InfiniteMovingCards speed="slow" items={[
-        {
-          quote: "we are the best ",
-          name: "pata nahi",
-          title: "mast"
-        },
-        {
-          quote: "we are the best ",
-          name: "pata nahi",
-          title: "mast"
-        },
-        {
-          quote: "we are the best ",
-          name: "pata nahi",
-          title: "mast"
-        },
-        {
-          quote: "we are the best ",
-          name: "pata nahi",
-          title: "mast"
-        },
-        {
-          quote: "we are the best ",
-          name: "pata nahi",
-          title: "mast"
-        },
-        
-      ]}></InfiniteMovingCards>
+          <div className="hidden sm:block">
 
-      
+            <InfiniteMovingCards speed="slow" items={[
+              {
+                quote: "we are the best ",
+                name: "pata nahi",
+                title: "mast"
+              },
+              {
+                quote: "we are the best ",
+                name: "pata nahi",
+                title: "mast"
+              },
+              {
+                quote: "we are the best ",
+                name: "pata nahi",
+                title: "mast"
+              },
+              {
+                quote: "we are the best ",
+                name: "pata nahi",
+                title: "mast"
+              },
+              {
+                quote: "we are the best ",
+                name: "pata nahi",
+                title: "mast"
+              },
+
+            ]}></InfiniteMovingCards>
+
+
+          </div>
+        </div>
+
+      </GridBackground>
+      {/* <div className="bg-white flex flex-wrap gap-3 justify-center">
+
+      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
+      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
+      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
+ </div> */}
+
+      <div>
+        <h2 className="text-center text-4xl font-bold my-10">
+          Our Services
+        </h2>
+        <div className="flex flex-wrap  w-3/4 m-auto gap-y-32 justify-center my-20 gap-10">
+
+          <PinContainer
+            title="Contenet Production"
+            href="/content-production"
+
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
+                Content Production
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  We offer end-to-end content production services from full-service project management to pre-editing, copyediting, typesetting, proofreading, artwork etc..
+                </span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 ">
+                <Image src={img5} alt={"Content Production"} className="rounded-lg mb-14"></Image>
+              </div>
+            </div>
+          </PinContainer>
+          <PinContainer
+            title="/ui.aceternity.com"
+            href="/content-production"
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
+                Content Transformation
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Technology has been evolving continuously and so have the standards to store and exchange content. The trend has created an ever-growing need to transform content…
+                </span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 ">
+                <Image src={img7} alt={"Software solution"} className="rounded-lg"></Image>
+              </div>
+            </div>
+          </PinContainer>
+          <PinContainer
+            title="/ui.aceternity.com"
+            href="/content-production"
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
+                Content Enrichment
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  With changing user habits and expanding mediums in which content could be consumed, the need for enrichment—adding abstracts, keywords, and indexes for ease …
+                </span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 ">
+                <Image src={img6} alt={"Software solution"} className="rounded-lg"></Image>
+              </div>
+            </div>
+          </PinContainer>
+          <PinContainer
+            title="/ui.aceternity.com"
+            href="/content-production"
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
+                Content Development
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Content development is a crucial part of many different industries, including marketing, advertising, journalism, and education Effective content development…
+                </span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 ">
+                <Image src={img4} alt={"Software solution"} className="rounded-lg"></Image>
+              </div>
+            </div>
+          </PinContainer>
+          <PinContainer
+            title="/ui.aceternity.com"
+            href="/content-production"
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
+                Software Solutions
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  The ability to reassess one’s accomplishments and find new ways of doing things better using latest technologies is key to staying relevant in this everchanging world…
+                </span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 ">
+                <Image src={img3} alt={"Software solution"} className="rounded-lg"></Image>
+              </div>
+            </div>
+          </PinContainer>
+
+        </div>
       </div>
-    </div>
-    
-  </GridBackground>
- <div className="bg-white flex flex-wrap gap-3 justify-center">
+      <div className="min-h-screen bg-gray-200 flex items-center justify-center">
+        <div className="flex flex-wrap lg:flex-row items-center lg:items-start gap-20 justify-center">
+          <Image src={img8} className="max-w-sm rounded-lg shadow-2xl" alt={"why choose us?"} />
+          <div className="lg:ml-8 mt-8 lg:mt-0 w-1/2">
+            <h1 className="text-5xl font-bold">Why Choose Us?</h1>
+            <p className="py-6 text-balance">Today’s content marketplace has no dearth of fancy solutions. Excessive showcase of efficiencies drawn from ideal-case scenarios morphed with technological jargon is common in most. However, the reality is always different. We understand from our interactions with clients that they require solutions that can complement and add value to their processes and products rather than doing what an off-the-shelf solution usually offers. This is the gap we, at eVC-Tech, aspire to bridge.
 
-      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
-      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
-      <Card heading="this is new heading"  para="sfhjkghjskdfhkl" url="#" image='https://images.unsplash.com/photo-1717705717956-432114a03149?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></Card>
- </div>
+              Customization is at the core of our services. We do not push run-of-the-mill solutions but instead try to understand each client’s specific requirements in view of their evolving markets and business models.
+
+              We work with open minds and design our processes and services to best-suit our clients’ objectives. We further supplement the solutions with cutting-edge tools and the rich knowledge base of our subject-matter experts (SMEs), which helps us not only deliver quality products on time but also enhance the overall value of the products.
+
+              Our team has extensive experience in delivering the highest level of quality across a range of services, such as:</p>
+            {/* <button className="bg-blue-500 text-white py-2 px-4 rounded">Get Started</button> */}
+            <ul className="space-y-4">
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Full-service project management</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">All levels of copyediting and proofreading</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Production services for multi-channel delivery of books and journals, magazines and ads</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Data structuring and transformation</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Content enrichment</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Web apps development for business solutions</span>
+        </li>
+      </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-7xl py-12 md:py-24">
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+            {/* contact from */}
+            <div className="flex items-center justify-center">
+              <div className="px-2 md:px-12">
+                <p className="text-2xl font-bold text-gray-900 md:text-4xl">Get in touch</p>
+                <p className="mt-4 text-lg text-gray-600">
+                  Our friendly team would love to hear from you.
+                </p>
+                <form action="" className="mt-8 space-y-4">
+                  <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+                    <div className="grid w-full  items-center gap-1.5">
+                      <label
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="first_name"
+                      >
+                        First Name
+                      </label>
+                      <input
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        type="text"
+                        id="first_name"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div className="grid w-full  items-center gap-1.5">
+                      <label
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="last_name"
+                      >
+                        Last Name
+                      </label>
+                      <input
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        type="text"
+                        id="last_name"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      type="text"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="phone_number"
+                    >
+                      Phone number
+                    </label>
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      type="tel"
+                      id="phone_number"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="message"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      id="message"
+                      placeholder="Leave us a message"
+                      cols={3}
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+            <img
+              alt="Contact us"
+              className="hidden max-h-full w-full rounded-lg object-cover lg:block"
+              src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            />
+          </div>
+        </div>
+      </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 }

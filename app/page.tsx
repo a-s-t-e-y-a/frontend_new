@@ -4,7 +4,7 @@ import { Navbar } from "./components/navbar";
 import { BackgroundGradient } from "./components/ui/background-gradient";
 import { GridBackground } from "./components/ui/gridbackground";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
-import Card from "./components/card";
+// import Card from "./components/card";
 import { PinContainer } from "./components/ui/3d-pin";
 import img3 from "@/public/scott-graham-5fNmWej4tAA-unsplash.jpg"
 import Image from "next/image";
@@ -13,8 +13,44 @@ import img5 from '@/public/peter-stumpf-FhZEpxtTI_Y-unsplash.jpg'
 import img6 from '@/public/jess-bailey-q10VITrVYUM-unsplash.jpg'
 import img7 from '@/public/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg'
 import img8 from '@/public/bulb.jpg'
+import Link from "next/link";
+
+const Card = ({ imageUrl, title, description, href }:any) => (
+  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-6">
+    <Link href={href}>
+    
+        <Image
+          src={imageUrl}
+          alt={title}
+          className="rounded-t-lg aspect-square object-cover"
+          width={500}
+          height={300}
+          
+        />
+   
+    </Link>
+    <div className="p-5">
+      <Link href={href}>
+      
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+
+      </Link>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+      <Link href={href}>
+        <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-violet-500 rounded-lg hover:bg-violet-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read more
+          <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </div>
+      </Link>
+    </div>
+  </div>
+);
+
 
 export default function App() {
+
   return (
     <div className="bg-white text-black">
       <Navbar />
@@ -77,101 +113,44 @@ export default function App() {
         <h2 className="text-center text-4xl font-bold my-10">
           Our Services
         </h2>
-        <div className="flex flex-wrap  w-3/4 m-auto gap-y-32 justify-center my-20 gap-10">
-
-          <PinContainer
-            title="Contenet Production"
-            href="/content-production"
-
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
-                Content Production
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  We offer end-to-end content production services from full-service project management to pre-editing, copyediting, typesetting, proofreading, artwork etc..
-                </span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 ">
-                <Image src={img5} alt={"Content Production"} className="rounded-lg mb-14"></Image>
-              </div>
-            </div>
-          </PinContainer>
-          <PinContainer
-            title="/ui.aceternity.com"
-            href="/content-production"
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
-                Content Transformation
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Technology has been evolving continuously and so have the standards to store and exchange content. The trend has created an ever-growing need to transform content…
-                </span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 ">
-                <Image src={img7} alt={"Software solution"} className="rounded-lg"></Image>
-              </div>
-            </div>
-          </PinContainer>
-          <PinContainer
-            title="/ui.aceternity.com"
-            href="/content-production"
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
-                Content Enrichment
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  With changing user habits and expanding mediums in which content could be consumed, the need for enrichment—adding abstracts, keywords, and indexes for ease …
-                </span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 ">
-                <Image src={img6} alt={"Software solution"} className="rounded-lg"></Image>
-              </div>
-            </div>
-          </PinContainer>
-          <PinContainer
-            title="/ui.aceternity.com"
-            href="/content-production"
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
-                Content Development
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Content development is a crucial part of many different industries, including marketing, advertising, journalism, and education Effective content development…
-                </span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 ">
-                <Image src={img4} alt={"Software solution"} className="rounded-lg"></Image>
-              </div>
-            </div>
-          </PinContainer>
-          <PinContainer
-            title="/ui.aceternity.com"
-            href="/content-production"
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-black">
-                Software Solutions
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  The ability to reassess one’s accomplishments and find new ways of doing things better using latest technologies is key to staying relevant in this everchanging world…
-                </span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 ">
-                <Image src={img3} alt={"Software solution"} className="rounded-lg"></Image>
-              </div>
-            </div>
-          </PinContainer>
-
-        </div>
+        <div className="flex flex-wrap gap-10 w-3/4 m-auto justify-center ">
+    <Card
+      imageUrl={img3}
+      title="Content Production"
+      description="We offer end-to-end content production services from full-service project management to pre-editing, copyediting, typesetting, proofreading, artwork etc."
+      href="/services"
+    />
+    <Card
+      imageUrl={img4}
+      title="Content Transformation"
+      description="Technology has been evolving continuously and so have the standards to store and exchange content. The trend has created an ever-growing need to transform content…"
+      href="/content-transformation"
+    />
+    <Card
+imageUrl={img4}
+      title="Content Enrichment"
+      description="With changing user habits and expanding mediums in which content could be consumed, the need for enrichment—adding abstracts, keywords, and indexes for ease …"
+      href="/content-enrichment"
+    />
+    <Card
+      imageUrl={img5}
+      title="Content Development"
+      description="Content development is a crucial part of many different industries, including marketing, advertising, journalism, and education Effective content development…"
+      href="/content-development"
+    />
+    <Card
+      imageUrl={img6}
+      title="Software Solutions"
+      description="The ability to reassess one’s accomplishments and find new ways of doing things better using latest technologies is key to staying relevant in this everchanging world…"
+      href="/software-solutions"
+    />
+    {/* <Card
+      imageUrl="/docs/images/blog/image-placeholder.jpg"
+      title="Placeholder"
+      description="Placeholder content for additional PinContainers."
+      href="#"
+    /> */}
+  </div>
       </div>
       <div className="min-h-screen bg-gray-200 flex items-center justify-center">
         <div className="flex flex-wrap lg:flex-row items-center lg:items-start gap-20 justify-center">

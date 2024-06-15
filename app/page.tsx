@@ -22,7 +22,7 @@ const Card = ({ imageUrl, title, description, href }:any) => (
         <Image
           src={imageUrl}
           alt={title}
-          className="rounded-t-lg aspect-square object-cover"
+          className="rounded-t-lg aspect-video object-cover"
           width={500}
           height={300}
           

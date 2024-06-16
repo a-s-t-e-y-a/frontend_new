@@ -55,8 +55,8 @@ export default function App() {
     <div className="bg-white text-black">
       <Navbar />
       <GridBackground>
-        <div className="flex flex-col items-center space-y-7 ">
-          <h1 className="text-violet-500">Scale your publication</h1>
+        <div className="flex flex-col items-center space-y-7  ">
+          <h1 className="text-violet-500 ">Scale your publication</h1>
           <h1 className="text-black">with eVC</h1>
           <h3 className="text-gray-500 text-lg font-light ">We are increasing business success with technology</h3>
           <button

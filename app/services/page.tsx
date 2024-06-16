@@ -20,7 +20,19 @@ import { Footer } from "../components/footer";
 import { Meteors } from "../components/ui/meteors";
 import { MeteorsDemo } from "../components/meteor";
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
+import img13 from "@/public/plannning.jpg"
 
+function NewCard({title,dis}:any){
+    return(
+        <>
+        <div className="mx-5 sm:mx-20"><h1 className="text-2xl font-bold">{title}</h1>
+        <p>
+        {dis}
+        </p>
+        </div>
+        </>
+    )
+}
 
 export default function Page() {
     return (
@@ -29,7 +41,8 @@ export default function Page() {
             </Navbar>
             <GridBackground>
                 <div className="flex flex-col items-center space-y-10">
-                    <h2 className="text-6xl text-black text-center">Publishing with industry <br />experts by your side</h2>
+                    
+                    <h2 className="text-6xl text-black text-center ">Publishing with industry <br />experts by your side</h2>
                     <h3 className="text-2xl text-center">Give superpowers to your publishing lifecycle with our expert services team</h3>
                     <button
                         type="button"
@@ -65,15 +78,46 @@ export default function Page() {
             </div>
             <div className="container mx-auto  px-4 py-10">
                 <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-                <div className="flex flex-wrap gap-10 justify-center">
-                    
-                <MeteorsDemo title="Defining Scope & Planning" dis="We work with you to define project scope, services, and deliverables, allocating resources like editors and designers." link="#"></MeteorsDemo>
-                <MeteorsDemo title="Scheduling" dis="We create timelines, monitor progress, address delays, and adjust schedules as needed." link="#"></MeteorsDemo>
-                <MeteorsDemo title="Communication" dis="We act as a central point of contact, manage expectations, and resolve conflicts between teams." link="#"></MeteorsDemo>
-                <MeteorsDemo title="Quality Assurance" dis="We establish quality control processes, conduct reviews, and ensure adherence to guidelines." link="#"></MeteorsDemo>
-                <MeteorsDemo title="Budget & Risk Management" dis="We identify potential risks, develop mitigation strategies, and manage project budgets." link="#"></MeteorsDemo>
-                <MeteorsDemo title="Post-Project Evaluation" dis="We gather feedback, identify improvement areas, and optimize workflows leveraging technology." link="#"></MeteorsDemo>
-                </div>
+                <div className="flex flex-wrap gap-10 justify-center items-center">
+                    <ul className="list-disc">
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Defining Scope & Planning</div>
+
+                            <div>We work with you to define project scope, services, and deliverables, allocating resources like editors and designers</div>
+                        </li>
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Scheduling</div>
+                
+                            <div>We create timelines, monitor progress, address delays, and adjust schedules as needed.</div>
+                        </li>
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Communication</div>
+                            
+                            <div>We act as a central point of contact, manage expectations, and resolve conflicts between teams.</div>
+                        </li>
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Quality Assurance</div>
+                           
+                            <div>We establish quality control processes, conduct reviews, and ensure adherence to guidelines.</div>
+                        </li>
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Budget & Risk Management</div>
+                            
+                            <div>We identify potential risks, develop mitigation strategies, and manage project budgets.</div>
+                        </li>
+                        <li className="my-10">
+                            <div className="font-bold text-2xl">Post-Project Evaluation</div>
+                        
+                            <div>We gather feedback, identify improvement areas, and optimize workflows leveraging technology.</div>
+                        </li>
+                      
+                    </ul>
+                    <DirectionAwareHover imageUrl={img13} ><span></span></DirectionAwareHover>
+                
+               
+                
+                
+               </div>
             
             </div>
 

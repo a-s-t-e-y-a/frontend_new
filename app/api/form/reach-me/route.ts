@@ -1,8 +1,7 @@
 import * as z from "zod";
-import { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client";
 import nodemailer from "nodemailer";
-import { warn } from "console";
+import { NextResponse } from "next/server";
 
 const FormSchema = z.object({
   id: z.string().optional(),
@@ -15,18 +14,18 @@ const FormSchema = z.object({
 
 const prisma = new PrismaClient();
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: "hotmail",
   auth: {
     user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
+    pass: process.env.PASSWORD
   },
 });
 
-export default async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: any) {
   try {
-    const validatedData = FormSchema.parse(req.body);
+    const validatedData = FormSchema.parse(await req.json());
 
-    await prisma.form.create({ data: validatedData });
+    const formCreated = await prisma.form.create({ data: validatedData });
 
     await transporter.sendMail({
       to: validatedData.email,
@@ -34,10 +33,29 @@ export default async function POST(req: NextApiRequest, res: NextApiResponse) {
       text: "We have received your message and will get back to you soon.",
     });
 
-    res.status(200).json({ message: "Form submitted successfully" });
+    return NextResponse.json(
+      {
+        status: 200,
+        data: formCreated,
+        message: 'Form submitted successfully'
+      },
+      {
+        status: 200
+      }
+    );
   } catch (error) {
     console.error(error);
-    res.status(400).json({ message: "Form submission failed", error: error });
+
+    return NextResponse.json(
+      {
+        status: 400,
+        data: error,
+        message: 'Form submission failed'
+      },
+      {
+        status: 400
+      }
+    );
   } finally {
     await prisma.$disconnect();
   }

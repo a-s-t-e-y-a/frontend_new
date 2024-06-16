@@ -33,8 +33,8 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
-  const [isDrop,setDrop]=useState(false)
-  function Dropdown(){
+  const [isDrop, setDrop] = useState(false)
+  function Dropdown() {
     setDrop(!isDrop)
   }
 
@@ -60,57 +60,57 @@ export function Navbar() {
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8 ">
-           
-              <li >
-                <Link
-                  href="/"
-                  className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-                >
-                 Home
-                </Link>
-              </li>
-              <li >
-                <Link
-                  href="/about"
-                  className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-                >
-                 About
 
-                </Link>
-              </li>
-              <li className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80" onClick={Dropdown}>
-               <div className='flex items-center'>
+            <li >
+              <Link
+                href="/"
+                className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+              >
+                Home
+              </Link>
+            </li>
+            <li >
+              <Link
+                href="/about"
+                className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+              >
+                About
 
-                 Services<ChevronDown></ChevronDown>
-               </div>
-                 {isDrop?<div className='absolute z-50 py-10 px-10 -mx-20 backdrop-filter backdrop-blur-md bg-opacity-90 border border-gray-100
+              </Link>
+            </li>
+            <li className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80" onClick={Dropdown}>
+              <div className='flex items-center'>
+
+                Services<ChevronDown></ChevronDown>
+              </div>
+              {isDrop ? <div className='absolute z-50 py-10 px-10 -mx-20 backdrop-filter backdrop-blur-md bg-opacity-90 border border-gray-100
 '><ul>
-                <li className='p-1'><Link href={'/services'}> Content Production</Link></li>
-                <li className='p-1'><Link href={'/content-transformation'}> Content Transformation</Link></li>
-                <li className='p-1'><Link href={'/content-enrichment'}> Content Enrichment</Link></li>
-                <li className='p-1'><Link href={'/content-development'}> Content Development</Link></li>
-                <li className='p-1'><Link href={'/software-solutions'}> Software Solutions</Link></li>
-                
-                </ul></div>:<span></span> }
-            
-              </li>
-              <li >
-                <Link
-                  href="/careers"
-                  className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-                >
-                 Careers
-                </Link>
-              </li>
-              <li >
-                <Link
-                  href="/contact"
-                  className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-                >
-                 Contact
-                </Link>
-              </li>
-         
+                  <li className='p-1'><Link href={'/services'}> Content Production</Link></li>
+                  <li className='p-1'><Link href={'/content-transformation'}> Content Transformation</Link></li>
+                  <li className='p-1'><Link href={'/content-enrichment'}> Content Enrichment</Link></li>
+                  <li className='p-1'><Link href={'/content-development'}> Content Development</Link></li>
+                  <li className='p-1'><Link href={'/software-solutions'}> Software Solutions</Link></li>
+
+                </ul></div> : <span></span>}
+
+            </li>
+            <li >
+              <Link
+                href="/careers"
+                className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+              >
+                Careers
+              </Link>
+            </li>
+            <li >
+              <Link
+                href="/contact"
+                className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+              >
+                Contact
+              </Link>
+            </li>
+
           </ul>
         </div>
         <div className="hidden lg:block">
@@ -172,61 +172,61 @@ export function Navbar() {
                       </Link>
                     ))} */}
 
-<ul className="space-x-8 ">
-           
-          
-           <li >
-             <Link
-               href="/"
-               className=" font-semibold text-gray-800 mx-7 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-             >
-              Home
+                    <ul className="space-x-8 ">
 
-             </Link>
-           </li>
-           <li >
-             <Link
-               href="/about"
-               className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-             >
-              About
 
-             </Link>
-           </li>
-           <li className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80" onClick={Dropdown}>
-            <div className='flex items-center'>
+                      <li >
+                        <Link
+                          href="/"
+                          className=" font-semibold text-gray-800 mx-7 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+                        >
+                          Home
 
-              Services<ChevronDown></ChevronDown>
-            </div>
-              {isDrop?<div className=' p-10
+                        </Link>
+                      </li>
+                      <li >
+                        <Link
+                          href="/about"
+                          className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+                        >
+                          About
+
+                        </Link>
+                      </li>
+                      <li className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80" onClick={Dropdown}>
+                        <div className='flex items-center'>
+
+                          Services<ChevronDown></ChevronDown>
+                        </div>
+                        {isDrop ? <div className=' p-10
 '><ul>
-             <li className='p-1'><Link href={'/services'}> Content Production</Link></li>
-             <li className='p-1'><Link href={'/content-transformation'}> Content Transformation</Link></li>
-             <li className='p-1'><Link href={'/content-enrichment'}> Content Enrichment</Link></li>
-             <li className='p-1'><Link href={'/content-development'}> Content Development</Link></li>
-             <li className='p-1'><Link href={'/software-solutions'}> Software Solutions</Link></li>
-             
-             </ul></div>:<span></span> }
-         
-           </li>
-           <li >
-             <Link
-               href="/careers"
-               className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-             >
-              Careers
-             </Link>
-           </li>
-           <li >
-             <Link
-               href="/contact"
-               className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
-             >
-              Contact
-             </Link>
-           </li>
-      
-       </ul>
+                            <li className='p-1'><Link href={'/services'}> Content Production</Link></li>
+                            <li className='p-1'><Link href={'/content-transformation'}> Content Transformation</Link></li>
+                            <li className='p-1'><Link href={'/content-enrichment'}> Content Enrichment</Link></li>
+                            <li className='p-1'><Link href={'/content-development'}> Content Development</Link></li>
+                            <li className='p-1'><Link href={'/software-solutions'}> Software Solutions</Link></li>
+
+                          </ul></div> : <span></span>}
+
+                      </li>
+                      <li >
+                        <Link
+                          href="/careers"
+                          className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+                        >
+                          Careers
+                        </Link>
+                      </li>
+                      <li >
+                        <Link
+                          href="/contact"
+                          className=" font-semibold text-gray-800 text-xl hover:text-gray-900 dark:text-white dark:hover:text-white/80"
+                        >
+                          Contact
+                        </Link>
+                      </li>
+
+                    </ul>
 
                   </nav>
                 </div>

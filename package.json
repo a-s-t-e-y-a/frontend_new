@@ -12,6 +12,9 @@
   "dependencies": {
     "@prisma/client": "5.15.0",
     "@types/nodemailer": "^6.4.15",
+    "@uppy/core": "^3.12.0",
+    "@uppy/react": "^3.3.1",
+    "@uppy/xhr-upload": "^3.6.7",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
@@ -22,6 +25,7 @@
     "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.0",
     "tailwind-merge": "^2.3.0",
     "zod": "^3.23.8"
   },

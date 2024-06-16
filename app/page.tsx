@@ -13,6 +13,7 @@ import img5 from '@/public/peter-stumpf-FhZEpxtTI_Y-unsplash.jpg'
 import img6 from '@/public/jess-bailey-q10VITrVYUM-unsplash.jpg'
 import img7 from '@/public/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg'
 import img8 from '@/public/bulb.jpg'
+import img9 from "@/public/missions.jpg"
 import Link from "next/link";
 
 const Card = ({ imageUrl, title, description, href }:any) => (
@@ -206,6 +207,75 @@ imageUrl={img4}
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+      <div className="min-h-screen bg-gray-200 flex items-center justify-center">
+  <div className="flex flex-wrap lg:flex-row items-center lg:items-start gap-20 justify-center">
+    <div className="lg:ml-8 mt-8 lg:mt-0 w-1/2">
+      <h1 className="text-5xl font-bold">Vision & Mission</h1>
+      <p className="py-6 text-balance">
+        At eVC-Tech, we prioritize innovation and cutting-edge technology while tailoring solutions to meet client needs. Our motto is “To keep client experience at the center of everything that we do.” Success is measured by the satisfaction of our people and customers, driven by continuous learning and improvement. We aim to create value for clients through cost efficiency, faster time-to-market, higher quality, dependability, and strong relationships, using our expertise to achieve mutual success.
+      </p>
+      <ul className="space-y-4">
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Innovation and cutting-edge technology</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Tailored solutions to meet client needs</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Client-centric approach</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Focus on people and customer satisfaction</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Continuous learning and improvement</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Creating value through cost efficiency, faster time-to-market, higher quality, and strong relationships</span>
+        </li>
+        <li className="flex items-start space-x-4">
+          <svg className="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-lg text-gray-700">Expertise-driven mutual success</span>
+        </li>
+      </ul>
+    </div>
+  <Image src={img9} className="max-w-sm rounded-lg shadow-2xl h-[550px] object-cover" alt={"why choose us?"} />
+  </div>
+
+</div>
+
+
+
 
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">

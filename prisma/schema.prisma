@@ -33,3 +33,12 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Form {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  first_name     String
+  last_name      String
+  email          String
+  number         String
+  message        String
+}

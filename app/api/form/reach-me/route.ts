@@ -14,7 +14,9 @@ const FormSchema = z.object({
 
 const prisma = new PrismaClient();
 const transporter = nodemailer.createTransport({
-  service: "hotmail",
+    host: 'smtp.office365.com', // Use the correct SMTP server
+    port: 587, // Use the correct port (587 for TLS)
+    secure: false, // Set to false for TLS
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
@@ -27,12 +29,12 @@ export async function POST(req: any) {
 
     const formCreated = await prisma.form.create({ data: validatedData });
 
-    await transporter.sendMail({
+    const data = await transporter.sendMail({
+      from:process.env.EMAIL,
       to: validatedData.email,
       subject: "Thank you for contacting us",
       text: "We have received your message and will get back to you soon.",
     });
-
     return NextResponse.json(
       {
         status: 200,

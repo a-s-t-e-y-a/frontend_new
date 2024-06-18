@@ -29,7 +29,7 @@ export async function POST(req: any) {
 
     const formCreated = await prisma.form.create({ data: validatedData });
 
-    const data = await transporter.sendMail({
+    await transporter.sendMail({
       from:process.env.EMAIL,
       to: validatedData.email,
       subject: "Thank you for contacting us",

@@ -8,10 +8,10 @@ import img4 from "@/public/tras.jpg"
 import { Footer } from "../components/footer";
 export default function ContentDevelopmentPage(){
     return(
-        <div className="bg-white text-black">
+        <div className="bg-white text-black px-5 sm:px-0">
             <Navbar></Navbar>
             <GridBackground>
-                <h1 className="text-black">Content Development</h1>
+                <h1 className="text-purple-800">Content Development</h1>
                 <div className="flex-wrap gap-10 hidden sm:flex ">
                     <Image src={img1} alt="" className="scale-75"></Image>
                     <Image src={img2} alt="" className="scale-75"></Image>
@@ -36,7 +36,7 @@ export default function ContentDevelopmentPage(){
     
 <h3 className="text-center font-bold text-4xl my-10 ">Translation</h3>
 <div className="flex flex-wrap justify-center gap-10">
-    <div className="w-full sm:w-1/2 p-10">
+    <div className="w-full sm:w-1/2 p-5 sm:p-10 text-justify">
         <p>We provide many different types of translation services for a variety of purposes, and the specific type of service needed will depend on the specific language pair being translated, the complexity of the text, and the purpose of the translation. Some common types of translation services include:</p>
         <ul className="list-disc ml-5">
             <li>
@@ -53,7 +53,7 @@ export default function ContentDevelopmentPage(){
             </li>
         </ul>
     </div>
-    <Image src={img4} alt="" className="w-1/4 object-contain scale-[2] mb-20 sm:scale-100" />
+    <Image src={img4} alt="" className="w-3/5 my-10 sm:w-1/4 object-contain scale-[2] mb-20 sm:scale-100" />
 </div>
 </div>
 <Footer></Footer>

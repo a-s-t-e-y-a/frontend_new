@@ -36,13 +36,14 @@ function NewCard({title,dis}:any){
 
 export default function Page() {
     return (
-        <div className="bg-white text-black">
+        <div className="bg-white text-black px-4 sm:px-0">
             <Navbar>
             </Navbar>
             <GridBackground>
-                <div className="flex flex-col items-center space-y-10">
+                
+                <div className="flex flex-col items-center space-y-10 ">
                     
-                    <h2 className="text-6xl text-black text-center ">Publishing with industry <br />experts by your side</h2>
+                    <h2 className="text-4xl mx-4 sm:text-6xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
                     <h3 className="text-2xl text-center">Give superpowers to your publishing lifecycle with our expert services team</h3>
                     <button
                         type="button"
@@ -112,7 +113,7 @@ export default function Page() {
                         </li>
                       
                     </ul>
-                    <DirectionAwareHover imageUrl={img13} ><span></span></DirectionAwareHover>
+                    <DirectionAwareHover imageUrl={img13} className="scale-150"><span></span></DirectionAwareHover>
                 
                
                 

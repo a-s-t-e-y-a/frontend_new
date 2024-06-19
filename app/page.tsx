@@ -155,7 +155,7 @@ imageUrl={img4}
     /> */}
   </div>
       </div>
-      <div className="min-h-screen bg-gray-200 flex items-center justify-center">
+      <div className="min-h-screen my-10 bg-gray-200 flex items-center justify-center">
         <div className="flex flex-wrap lg:flex-row items-center lg:items-start gap-20 justify-center">
           <Image src={img8} className="max-w-sm rounded-lg shadow-2xl" alt={"why choose us?"} />
           <div className="lg:ml-8 mt-8 lg:mt-0 w-1/2">

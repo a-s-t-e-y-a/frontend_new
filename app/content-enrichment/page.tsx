@@ -12,20 +12,20 @@ import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 
 export default function ConententEnrichmentPage() {
     return (
-        <div className="bg-white text-black">
+        <div className="bg-white text-black px-5 sm:px-0">
             <Navbar></Navbar>
             <GridBackground>
-                <h2 className="text-black">Content Enrichment</h2>
-                <div className="flex flex-wrap scale-75 gap-10">
+                <h2 className="text-purple-800">Content Enrichment</h2>
+                <div className="hidden sm:flex flex-wrap scale-75 gap-10 ">
                     <Image src={img1} alt={""} className="rounded-full"></Image>
                     <Image src={img2} alt={""} className="rounded-full"></Image>
                     <Image src={img3} alt={""} className="rounded-full"></Image>
                 </div>
             </GridBackground>
             <div className="flex flex-wrap justify-center align-middle gap-10 my-20">
-                <div className="w-1/3 ">
-                    <h1 className="text-4xl font-bold mb-10">Abstracting and Indexing</h1>
-                    <p>Understanding the objective of the final product and applying the best comprehension skills to pick out the right words and sentences to construct the most appropriate abstract and index is key to effective content publication. It provides readers with a window for a quick glance through the content and quick access to essential information based on which they may determine whether or not to read the entire content.
+                <div className="w-full sm:w-1/3 ">
+                    <h1 className="text-4xl font-bold mb-10 text-pretty">Abstracting and Indexing</h1>
+                    <p className="text-justify">Understanding the objective of the final product and applying the best comprehension skills to pick out the right words and sentences to construct the most appropriate abstract and index is key to effective content publication. It provides readers with a window for a quick glance through the content and quick access to essential information based on which they may determine whether or not to read the entire content.
 
                         Our SMEs from various disciplines of STM and humanities work to provide abstracting and indexing services for all types of publications, both online and print.
 
@@ -34,27 +34,27 @@ export default function ConententEnrichmentPage() {
                         Anchoring of index terms for precise cross-referencing and generating auto-page locators make our indexes dynamic and save immense time in case the content were to reflow.</p>
                 </div>
                 {/* <Image src={img4} alt="" className="w-1/4 aspect-square object-cover rounded-2xl"></Image> */}
-                <DirectionAwareHover imageUrl={img4}>
+                <DirectionAwareHover imageUrl={img4} className="scale-150 sm:scale-100 my-10 sm:my-100">
                     <span></span>
                 </DirectionAwareHover>
             </div>
 
 
 
-            <div className="flex flex-wrap justify-center align-middle gap-10 my-32 bg-gray-200 py-20">
-                <DirectionAwareHover imageUrl={img5}>
+            <div className="flex flex-wrap justify-center items-center gap-10 my-32 bg-gray-200 py-20 px-2 sm:px-0">
+                <DirectionAwareHover imageUrl={img5} className="scale-150 sm:scale-100 ">
                     <span></span>
                 </DirectionAwareHover>
-                <div className="w-1/3 ">
-                    <h1 className="text-4xl font-bold mb-10">Accessibility                    </h1>
-                    <div>Making content accessible is essential not only for legal compliance but also for creating an inclusive digital environment and promoting equal access to information, services, and opportunities to all users regardless of their abilities.
+                <div className="w-full mt-5 sm:w-1/3 ">
+                    <h1 className="text-4xl font-bold mb-10">Accessibility</h1>
+                    <div className="text-justify">Making content accessible is essential not only for legal compliance but also for creating an inclusive digital environment and promoting equal access to information, services, and opportunities to all users regardless of their abilities.
 
                         We offer accessibility services to primary and legacy content including alt-text writing. Our workflow is designed to offer accessibility to primary content right from the early stages of production to avoid the need for a separate step later.
 
                         Content accessibility offerings typically involve a set of guidelines, standards, and best practices that aim to make digital content more inclusive and enable publishers to reach a wider audience and improve the overall user experience for everyone.
 
                         Some common components of document content accessibility include:
-                        <ul className="list-disc my-5">
+                        <ul className="list-disc my-5 mx-5 sm:mx-0">
                             <li>Proper structuring of content using headings, lists, etc. to ensure compatibility with assistive technologies like screen readers. </li>
                             <li>Adding alternative text (alt text) to images and providing transcriptions for embedded audio-video content. </li>
                             <li>Considering color contrast ratios to provide clear visual cues for people with color vision deficiencies. </li>
@@ -67,7 +67,7 @@ export default function ConententEnrichmentPage() {
 
 
             <div className="flex flex-wrap justify-center align-middle gap-10 my-20">
-                <div className="w-1/3 ">
+                <div className="w-full sm:w-1/3 ">
                     <h1 className="text-4xl font-bold mb-10">Adaptation and Localization</h1>
                     <p>Localization involves more than just translation; it also includes adapting the product or service to the cultural, social, and linguistic norms of the target market.
 
@@ -84,7 +84,7 @@ export default function ConententEnrichmentPage() {
                         We engage our partners in respective geographies to offer one-stop solutions to our clients including translation and editing of content to local languages. 
                 </div>
                 {/* <Image src={img4} alt="" className="w-1/4 aspect-square object-cover rounded-2xl"></Image> */}
-                <DirectionAwareHover imageUrl={img6}>
+                <DirectionAwareHover imageUrl={img6} className="scale-150 sm:scale-100 my-10 sm:my-0">
                     <span></span>
                 </DirectionAwareHover>
             </div>

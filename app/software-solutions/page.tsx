@@ -14,7 +14,7 @@ export default function SoftwareSolution(){
         <div className="bg-white text-black">
         <Navbar></Navbar>
         <GridBackground>
-            <h2 className="text-black">Software solution</h2>
+            <h2 className="text-purple-800">Software solution</h2>
             <div className="hidden sm:flex flex-wrap my-36">
             <Image src={img1} alt={""}></Image>
             <Image src={img2} alt={""}></Image>
@@ -53,7 +53,7 @@ We see things in perspective and explore real-use cases of AI and ML in solving 
                 </h1>
                 <div className="flex flex-wrap justify-center items-center gap-10">
                     <p className="w-full sm:w-1/3 h-full mx-5 sm:mx-0">With users (customers) spending most of their time on mobile devices, it is becoming all the more important to connect with them on the medium they prefer. In the content space, it means the ability to engage users on the platforms that they prefer instead of leaving them to connect with and access content on websites, which are compliant to large-screen form factors.</p>
-                    <Image src={img6} alt="" className="w-[350px] aspect-square"></Image>
+                    <Image src={img6} alt="" className="w-[350px] rounded-xl aspect-square"></Image>
                 </div>
             </div>
 

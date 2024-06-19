@@ -22,7 +22,7 @@ export default function Careers() {
                 </button>
             </GridBackground>
             <h1 className='text-4xl font-bold mt-10 text-center'>Job Openings</h1>
-            <div className='flex flex-wrap gap-10 w-2/3 m-auto my-20'>
+            <div className='flex flex-wrap gap-10 w-full sm:w-2/3 m-auto my-20 justify-center'>
                 <MeteorsCard title='Copyeditors and Proofreaders' dis="Work on the frontend...11 to 3 years experience with working knowledge of CMoS, AMA" link="/form"></MeteorsCard>
                 {/* <MeteorsCard title='Backend Developer' dis="Work on the backend..." link="/apply/frontend"></MeteorsCard> */}
                 {/* <Card title="Frontend Developer" description="Work on the frontend..." link="/apply/frontend" /> */}

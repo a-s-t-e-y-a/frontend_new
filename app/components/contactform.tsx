@@ -1,6 +1,22 @@
+'use client'
+import useAddToForm from '@/utils/mutation/createForm';
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import toast, { Toaster } from 'react-hot-toast';
 
 function ContactForm() {
+  const { register, handleSubmit } = useForm();
+  const {mutate , isLoading } = useAddToForm()
+  const onSubmit = data => {
+    console.log(data);
+    mutate(data)
+    if(isLoading){
+      toast.loading('Waiting...');
+    } 
+    
+  };
+  
+
   return (
     <div className="mx-auto max-w-7xl px-4">
       <div className="mx-auto max-w-7xl py-12 md:py-24">
@@ -12,7 +28,7 @@ function ContactForm() {
               <p className="mt-4 text-lg text-gray-600">
                 Our friendly team would love to hear from you.
               </p>
-              <form action="#" className="mt-8 space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-4">
                 <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                   <div className="grid w-full items-center gap-1.5">
                     <label
@@ -22,7 +38,8 @@ function ContactForm() {
                       First Name
                     </label>
                     <input
-                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                      {...register('first_name', { required: 'First name is required' })}
+                      className="flex h-10 w-full rounded-md border border-gray-300 text-black  px-3 py-2 text-sm  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                       type="text"
                       id="first_name"
                       placeholder="First Name"
@@ -36,7 +53,8 @@ function ContactForm() {
                       Last Name
                     </label>
                     <input
-                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                      {...register('last_name', { required: 'Last name is required' })}
+                      className="flex h-10 w-full rounded-md border border-gray-300  text-black px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                       type="text"
                       id="last_name"
                       placeholder="Last Name"
@@ -51,7 +69,14 @@ function ContactForm() {
                     Email
                   </label>
                   <input
-                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                    {...register('email', {
+                      required: 'Email is required',
+                      pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                        message: 'Invalid email address',
+                      },
+                    })}
+                    className="flex h-10 w-full rounded-md border border-gray-300 px-3 py-2 text-sm  text-black focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                     type="email"
                     id="email"
                     placeholder="Email"
@@ -65,7 +90,14 @@ function ContactForm() {
                     Phone number
                   </label>
                   <input
-                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                    {...register('number', {
+                      required: 'Phone number is required',
+                      pattern: {
+                        value: /^\+?[1-9]\d{1,14}$/,
+                        message: 'Invalid phone number',
+                      },
+                    })}
+                    className="flex h-10 w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-black focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                     type="tel"
                     id="phone_number"
                     placeholder="Phone number"
@@ -79,7 +111,8 @@ function ContactForm() {
                     Message
                   </label>
                   <textarea
-                    className="flex h-20 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                    {...register('message', { required: 'Message is required' })}
+                    className="flex h-20 w-full rounded-md border border-gray-300  px-3 py-2 text-sm  text-black focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                     id="message"
                     placeholder="Leave us a message"
                     rows={3}
@@ -106,8 +139,10 @@ function ContactForm() {
           />
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
 
 export default ContactForm;
+

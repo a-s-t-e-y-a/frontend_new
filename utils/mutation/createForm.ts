@@ -2,21 +2,26 @@ import api from "@/app/api";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 
-const useAddToAddress = () => {
+const useAddToForm = () => {
   const mutate = useMutation({
     mutationKey: ["/addtoForm"],
     mutationFn: async (data) => {
       const res = await api.post("/form/reach-me", data);
       return res.data;
     },
-    onSuccess: (data) => {
-      toast.success("Address add sucesfully");
+    onMutate: () => {
+      toast.loading('Waiting...');
+    },
+    onSuccess: () => {
+      toast.dismiss();
+      toast.success("Form filled successfully");
     },
     onError: (err) => {
+      toast.dismiss();
       toast.error(err.message);
     },
   });
   return mutate;
 };
 
-export default useAddToAddress;
+export default useAddToForm;

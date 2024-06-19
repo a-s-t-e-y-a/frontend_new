@@ -6,13 +6,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function ContactForm() {
   const { register, handleSubmit } = useForm();
-  const {mutate , isLoading } = useAddToForm()
+  const {mutate  } = useAddToForm()
   const onSubmit = data => {
     console.log(data);
     mutate(data)
-    if(isLoading){
-      toast.loading('Waiting...');
-    } 
+   
     
   };
   

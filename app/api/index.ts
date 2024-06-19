@@ -3,7 +3,7 @@ import axios from "axios";
 // import { toast } from "react-toastify"
 
 // export const baseURL = "http://localhost:5000/api/"
-export const baseURL = "http://localhost:3000/api/"
+export const baseURL = "https://frontback-git-master-asteyas-projects.vercel.app/api/"
 
 const api = axios.create({
   baseURL,

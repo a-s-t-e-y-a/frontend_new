@@ -5,13 +5,18 @@ import { useForm } from 'react-hook-form';
 import toast, { Toaster } from 'react-hot-toast';
 
 function ContactForm() {
+  interface formData {
+    first_name:string
+    last_name:string
+    message:string
+    email:string
+    number:string
+  }
   const { register, handleSubmit } = useForm();
   const {mutate  } = useAddToForm()
-  const onSubmit = data => {
+  const onSubmit = (data: any) => {
     console.log(data);
-    mutate(data)
-   
-    
+    mutate(data);
   };
   
 

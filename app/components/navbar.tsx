@@ -39,7 +39,7 @@ export function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 relative w-full h-[100px] bg-white text-black ">
+    <div className="sticky z-50 top-0 w-full h-[100px] bg-white text-black ">
       <div className="mx-auto flex max-w-7xl  items-center justify-between px-4 py-8 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>

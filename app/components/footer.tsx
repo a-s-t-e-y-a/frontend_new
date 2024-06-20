@@ -2,8 +2,8 @@ import React from 'react'
 
 export function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-gray-100">
-      <div className="relative z-10 mx-auto max-w-7xl px-4">
+    <section className="relative overflow-hidden py-10  bg-gray-100 mt-12">
+      <div className="relative z-10   px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
@@ -51,28 +51,33 @@ export function Footer() {
     </h3>
     <ul>
       <li className="mb-4">
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="services">
           Content Production
         </a>
       </li>
       <li className="mb-4">
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/services">
           Project Management
         </a>
       </li>
       <li className="mb-4">
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-transformation">
           Content Transformation
         </a>
       </li>
       <li className="mb-4">
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-enrichment">
           Content Enrichment
         </a>
       </li>
-      <li>
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+      <li className='mb-4'>
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-development">
           Content Development
+        </a>
+      </li>
+      <li>
+        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/software-solutions">
+          Software solution
         </a>
       </li>
     </ul>

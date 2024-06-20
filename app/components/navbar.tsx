@@ -83,7 +83,7 @@ export function Navbar() {
 
                 Services<ChevronDown></ChevronDown>
               </div>
-              {isDrop ? <div className='absolute z-50 py-10 px-10 -mx-20 backdrop-filter backdrop-blur-md bg-opacity-90 border border-gray-100
+              {isDrop ? <div className='absolute z-50 py-10 px-10 -mx-20 bg-white border rounded-xl border-gray-100
 '><ul>
                   <li className='p-1'><Link href={'/services'}> Content Production</Link></li>
                   <li className='p-1'><Link href={'/content-transformation'}> Content Transformation</Link></li>

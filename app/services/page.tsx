@@ -21,6 +21,7 @@ import { Meteors } from "../components/ui/meteors";
 import { MeteorsDemo } from "../components/meteor";
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 import img13 from "@/public/plannning.jpg"
+import Link from "next/link";
 
 function NewCard({title,dis}:any){
     return(
@@ -56,14 +57,27 @@ export default function Page() {
             <h1 className="text-center font-bold bg-white text-black my-8  text-4xl">Content Production</h1>
             <h2 className=" text-center">We offer end-to-end content production services from full-service project management to pre-editing, copyediting, typesetting, proofreading, artwork services, etc.</h2>
             <div className="flex flex-wrap gap-10 w-2/3 align-middle justify-center m-auto my-10">
+            <Link href="#projectmanagement">
                 <Image src={img1} alt="Project Management" width={150}></Image>
-                <Image src={img2} alt="Project Management" width={150}></Image>
-                <Image src={img3} alt="Project Management" width={150}></Image>
+            </Link>
+            <Link href="#copyediting">
+                <Image src={img2} alt="Copy Editing" width={150}></Image>
+            </Link>
+            <Link href="#preediting">
+                <Image src={img3} alt="Pre editing" width={150}></Image>
+            </Link>
+            <Link href="#typesetting">
+            
                 <Image src={img4} alt="Project Management" width={150}></Image>
+            </Link>
+            <Link href="#proofreading">
                 <Image src={img5} alt="Project Management" width={150}></Image>
+                </Link>
+                <Link href="#imageartwork">
                 <Image src={img6} alt="Project Management" width={150}></Image>
+                </Link>
             </div>
-            <h2 className="text-4xl text-center my-10 font-bold">Project Management</h2>
+            <h2 className="text-4xl text-center my-10 font-bold" id='projectmanagement'>Project Management</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 ">
                 <Image src={img7} alt='Project Management' className="h-[400px] w-[600px] sm:ml-10  scale-90 sm:scale-100 object-cover rounded-lg"></Image>
                 <p className="text-balance p-6  sm:p-24">
@@ -74,12 +88,12 @@ export default function Page() {
                     Here are some key aspects of full-service project management that our team performs:
                 </p>
             </div>
-            <div className="bg-black text-white p-4 my-20">
+            <div className="bg-black text-white py-4 my-20">
                 <h1 className="text-3xl text-center font-bold">Full-Service Project Management</h1>
             </div>
-            <div className="container mx-auto  px-4 py-10">
-                <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-                <div className="flex flex-wrap gap-10 justify-center items-center">
+            <div className="container mx-auto   py-10">
+                <h2 className="text-2xl font-bold text-center mb-4">Our Services</h2>
+                <div className="flex flex-wrap gap-10 justify-around items-center">
                     <ul className="list-disc">
                         <li className="my-10">
                             <div className="font-bold text-2xl">Defining Scope & Planning</div>
@@ -113,7 +127,7 @@ export default function Page() {
                         </li>
                       
                     </ul>
-                    <DirectionAwareHover imageUrl={img13} className="scale-150"><span></span></DirectionAwareHover>
+                    {/* <DirectionAwareHover imageUrl={img13} className="scale-150"><span></span></DirectionAwareHover> */}
                 
                
                 
@@ -126,7 +140,7 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-6 sm:px-24 mt-32 justify-items-center ">
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
-                        <h2 className="text-4xl font-bold my-4">Pre-editing</h2>
+                        <h2 className="text-4xl font-bold my-4" id="preediting">Pre-editing</h2>
                         <p className="">
                             Pre-editing is an essential step in preparing any structured and unstructured content for publication. Our pre-editors engage with the content, understand its flow—which is a basic building block for any publication—and then prepare it for the next major steps, such as copyediting, online publication, and typesetting.
                             Organizing the content as per the required order, cleaning up unnecessary items such as double spaces and empty paragraphs, applying styles, ensuring active and correct cross-links, and performing rule-based mechanical edits are some of the key activities performed at this stage, which lays down the foundation for content publication on any platform in any medium.
@@ -152,7 +166,7 @@ export default function Page() {
                 </div>
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
-                        <h2 className="text-4xl font-bold my-4">Copyediting</h2>
+                        <h2 className="text-4xl font-bold my-4" id="copyediting">Copyediting</h2>
                         <p>
                             An important step in the publishing cycle, copyediting ensures that the author’s message is clearly communicated to the readers—in the author’s voice. Many technological advancements have taken place over the years in the natural language processing space that we use in our daily work to predict errors in writing and to improve it. However, human eyes remain our best tool yet—their ability to find sense and clarity, or a lack thereof, is still unmatched. Moreover, only a skilled copyeditor can make the best use of the suggestions provided by any technological solution.
 
@@ -166,7 +180,7 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-6 sm:px-24 justify-items-center mt-32 ">
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
-                        <h2 className="text-4xl font-bold my-4">Typesetting</h2>
+                        <h2 className="text-4xl font-bold my-4" id="typesetting">Typesetting</h2>
                         <p>
                             Typesetting is the stage where the content is given its esthetic look and feel from the perspective of a physical page that one can print and feel in one’s hands. We follow industry best practices to meet the diversified needs of simultaneous print and electronic publishing from early on in the content production cycle and maintain a single master source throughout the different production stages.
 
@@ -193,7 +207,7 @@ export default function Page() {
                 </div>
                 <div className="flex items-center ">
                     <div className="text-balance lg:ml-24 ">
-                        <h2 className="text-4xl font-bold my-4">
+                        <h2 className="text-4xl font-bold my-4" id="proofreading">
                             Proofreading</h2>
                         <p>
                             Once the content has been finalized, it is sent for proofreading. It is the final comprehensive check before the product is prepared for publishing. The objective remains the same—to ensure that the writer’s thoughts are clearly communicated to the readers with a reflection of the publisher’s brand value and identity. It involves checking the document for sense, style, and consistency in terms of both content and layout.
@@ -206,7 +220,7 @@ export default function Page() {
             </div>
             <div>
 
-            <h2 className="text-center text-4xl font-bold my-10">Image Processing and Artworks</h2>
+            <h2 className="text-center text-4xl font-bold my-10" id="imageartwork">Image Processing and Artworks</h2>
             <p className="text-center w-1/2 m-auto">We have the expertise to convert figures from any graphic and non-graphic applications to print- and web-ready image formats. This includes enhancement of colors, labeling, re-drawing, and proofing, among others.</p>
             </div>
             <Image src={img12} alt="artwork" className="m-auto mt-10 rounded-md"></Image>

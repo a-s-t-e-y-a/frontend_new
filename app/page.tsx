@@ -4,7 +4,8 @@ import { GridBackground } from "./components/ui/gridbackground";
 import img3 from "@/public/scott-graham-5fNmWej4tAA-unsplash.jpg"
 import Image from "next/image";
 import img4 from '@/public/austin-distel-wD1LRb9OeEo-unsplash.jpg'
-import img5 from '@/public/peter-stumpf-FhZEpxtTI_Y-unsplash.jpg'
+import img41 from '@/public/peter-stumpf-FhZEpxtTI_Y-unsplash.jpg'
+import img5 from '@/public/new.jpg'
 import img6 from '@/public/jess-bailey-q10VITrVYUM-unsplash.jpg'
 import img8 from '@/public/bulb.jpg'
 import img9 from "@/public/missions.jpg"
@@ -91,7 +92,7 @@ export default function App() {
       href="/content-transformation"
     />
     <Card
-imageUrl={img4}
+imageUrl={img41}
       title="Content Enrichment"
       description="With changing user habits and expanding mediums in which content could be consumed, the need for enrichment—adding abstracts, keywords, and indexes for ease …"
       href="/content-enrichment"

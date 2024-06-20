@@ -119,11 +119,11 @@ imageUrl={img4}
 
 
       </div>
-    <div className="min-h-screen my-10 flex items-center justify-center">
+    <div className="min-h-screen my-4 flex items-center justify-center">
     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-20 justify-center px-4 lg:px-0">
         <Image src={img8} className="w-full max-w-sm rounded-lg shadow-2xl" alt={"why choose us?"} />
         <div className="lg:ml-8 mt-8 lg:mt-0 w-full lg:w-1/2">
-            <h1 className="text-2xl font-bold">Why Choose Us?</h1>
+            <h1 className="text-3xl font-bold">Why Choose Us?</h1>
             <p className="py-6 text-balance">
                 Today’s content marketplace has no dearth of fancy solutions. Excessive showcase of efficiencies drawn from ideal-case scenarios morphed with technological jargon is common in most. However, the reality is always different. We understand from our interactions with clients that they require solutions that can complement and add value to their processes and products rather than doing what an off-the-shelf solution usually offers. This is the gap we, at eVC-Tech, aspire to bridge.
                 <br></br>
@@ -190,26 +190,22 @@ imageUrl={img4}
 
 
 
-    <div className="min-h-screen flex items-center justify-center p-4 lg:p-0">
-  <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-20 justify-center">
+<div className="min-h-screen flex items-center justify-center px-4 lg:px-0">
+  <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10 lg:gap-20 justify-center mx-auto lg:mx-52">
     <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-      <h1 className="text-3xl lg:text-5xl font-bold">Vision & Mission</h1>
+      <h1 className="text-3xl font-bold">Vision & Mission</h1>
       <p className="py-6 text-balance">
         We, at eVC-Tech, believe in innovation and live on cutting-edge technologies. At the same time, we remain sensitive to the need to make the various technologies work for our clients’ needs rather than tweaking them to come up with a templated solution.
-              <br></br>
-                <br></br>
-
-
-Our motto is “To keep client experience at the center of everything that we do.” We measure our strength and success in our people’s and customers’ satisfaction and success. And this has been possible because of our persistent nurturing of a culture of continuous learning and continual improvement in processes, tools, and technologies.
-              <br></br>
-                <br></br>
-
-
-Our objective is to create value for our clients, which can take any form—cost efficiency, faster time-to-market, higher quality, dependability, or overall relationship and satisfaction. We bring in all our expertise and strengths to achieve this and succeed along with our clients.      </p>
-        </div>
-    <Image src={img9} className="w-full max-w-sm rounded-lg shadow-2xl h-64 lg:h-[550px] object-cover" alt={"why choose us?"} />
+        <br /><br />
+        Our motto is “To keep client experience at the center of everything that we do.” We measure our strength and success in our people’s and customers’ satisfaction and success. And this has been possible because of our persistent nurturing of a culture of continuous learning and continual improvement in processes, tools, and technologies.
+        <br /><br />
+        Our objective is to create value for our clients, which can take any form—cost efficiency, faster time-to-market, higher quality, dependability, or overall relationship and satisfaction. We bring in all our expertise and strengths to achieve this and succeed along with our clients.
+      </p>
+    </div>
+    <Image src={img9} className="w-full max-w-sm lg:max-w-md rounded-lg" alt={"why choose us?"} />
   </div>
 </div>
+
 
 
 

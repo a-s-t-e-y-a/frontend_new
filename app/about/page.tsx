@@ -132,18 +132,19 @@ export default function About() {
           ))}
         </div>
         <hr className="my-20" />
-        <div className='flex flex-wrap gap-36 justify-center align-middle'>
-
-        <div className=' px-6 sm:w-1/2 '>
-          <h1 className='text-2xl my-6 font-bold  text-black'>Why Choose Us?</h1>
-          <p className='text-justify'>In today’s content marketplace, the choices seem endless. Many companies boast of efficiencies derived from ideal-case scenarios filled with technological jargon. However, reality often differs from the ideal. At eVC-Tech, we recognize that clients need solutions that add genuine value to their processes and products, going beyond what off-the-shelf options can offer. There’s a significant gap between the bespoke needs of clients and the one-size-fits-all offerings from big vendors. Bridging this gap is our mission.
-
-            Customization is at the heart of our services. We don’t push generic solutions. Instead, we take the time to understand each client’s unique requirements, considering their evolving markets and business models. We approach every project with an open mind, designing our processes and services to align with our clients’ objectives. By integrating cutting-edge tools and leveraging the rich knowledge of our subject-matter experts (SMEs), we not only deliver quality products on time but also enhance their overall value.
-
-          </p>
-        </div>
-        <Image src={img1} alt='why' unoptimized height={400} width={400}></Image>
-        </div>
+       <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-0 gap-10 lg:gap-20">
+  <div className="w-full lg:w-1/2">
+    <h1 className="text-2xl my-6 font-bold text-black">Why Choose Us?</h1>
+    <p className="text-justify">
+      In today’s content marketplace, the choices seem endless. Many companies boast of efficiencies derived from ideal-case scenarios filled with technological jargon. However, reality often differs from the ideal. At eVC-Tech, we recognize that clients need solutions that add genuine value to their processes and products, going beyond what off-the-shelf options can offer. There’s a significant gap between the bespoke needs of clients and the one-size-fits-all offerings from big vendors. Bridging this gap is our mission.
+      <br /><br />
+      Customization is at the heart of our services. We don’t push generic solutions. Instead, we take the time to understand each client’s unique requirements, considering their evolving markets and business models. We approach every project with an open mind, designing our processes and services to align with our clients’ objectives. By integrating cutting-edge tools and leveraging the rich knowledge of our subject-matter experts (SMEs), we not only deliver quality products on time but also enhance their overall value.
+    </p>
+  </div>
+  <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+    <Image src={img1} alt="why" unoptimized height={400} width={400} className="rounded-lg" />
+  </div>
+</div>
         <hr className='my-20'></hr>
         {/* greetings */}
         {/* <div className="mt-16 flex items-center">

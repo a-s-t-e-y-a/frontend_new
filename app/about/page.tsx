@@ -8,6 +8,7 @@ import img1 from '@/public/7720441.jpg'
 import Image from 'next/image'
 import { DirectionAwareHover } from '../components/ui/direction-aware-hover'
 import img2 from '@/public/visions-768x512.jpg'
+import img3 from '@/public/about_us.jpg'
 
 
 
@@ -21,6 +22,7 @@ export default function About() {
   return (
     <div className='bg-white text-gray-600'>
       <Navbar></Navbar>
+      <Image src={img3} alt=''  className='m-auto w-[100%]'></Image>
 
       <div className="mx-auto w-4/5 px-4 ">
         {/* Hero Map */}

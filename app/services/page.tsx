@@ -16,6 +16,7 @@ import img9 from '@/public/daniel-thomas-gWlBxOAgXgQ-unsplash.jpg'
 import img10 from '@/public/mika-baumeister-jRYWelZhhGg-unsplash.jpg'
 import img11 from '@/public/high-angle-hand-correcting-grammar-mistakes.jpg'
 import img12 from '@/public/artwork.jpg'
+import img14 from '@/public/content_production.jpg'
 import { Footer } from "../components/footer";
 import { Meteors } from "../components/ui/meteors";
 import { MeteorsDemo } from "../components/meteor";
@@ -40,8 +41,8 @@ export default function Page() {
         <div className="bg-white text-black px-4 sm:px-0">
             <Navbar>
             </Navbar>
+                <Image src={img14} alt="" className="w-[100%] "></Image>
             <GridBackground>
-                
                 <div className="flex flex-col items-center space-y-10 ">
                     
                     <h2 className="text-4xl mx-4 sm:text-6xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
@@ -51,6 +52,12 @@ export default function Page() {
                         className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                         Contact Us
                     </button>
+                </div>
+                <div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
             </GridBackground>
 

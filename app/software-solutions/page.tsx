@@ -8,19 +8,21 @@ import img3 from "@/public/software3-1.png"
 import img4 from "@/public/19199172.jpg"
 import img5 from "@/public/TaeJune15.jpg"
 import img6 from "@/public/30535.jpg"
+import img7 from "@/public/software_solutions.jpg"
 
 export default function SoftwareSolution(){
     return(
         <div className="bg-white text-black">
         <Navbar></Navbar>
-        <GridBackground>
-            <h2 className="text-purple-800">Software solution</h2>
+        <Image src={img7} alt="" className="w-full "></Image>
+        <div className="flex flex-col justify-center items-center ">
+            <h2 className="text-purple-800 text-wrap text-3xl sm:text-6xl font-extrabold mt-5 sm:my-10">Software solution</h2>
             <div className="hidden sm:flex flex-wrap my-36">
             <Image src={img1} alt={""}></Image>
             <Image src={img2} alt={""}></Image>
             <Image src={img3} alt={""}></Image>
             </div>
-            </GridBackground>
+            </div>
             <div>
                 <h1 className="text-4xl font-bold text-center my-10">Business Process Automation
                 </h1>

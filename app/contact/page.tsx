@@ -5,6 +5,8 @@ import { Menu, X, MapPin } from 'lucide-react'
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
 import ContactForm from '../components/contactform'
+import Image from 'next/image'
+import img1 from '@/public/contact-2.jpg'
 
 const menuItems = [
   {
@@ -31,16 +33,12 @@ const locations = [
 ]
 
 export default function Contact() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+ 
 
   return (
     <div className='bg-white'>
       <Navbar></Navbar>
-
+      <Image src={img1} alt='Contact' className='w-full'></Image>
       <ContactForm></ContactForm>
       {/* Address */}
       <div className="rounded-lg bg-gray-100">

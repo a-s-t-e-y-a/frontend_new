@@ -27,7 +27,7 @@ import Link from "next/link";
 function NewCard({title,dis}:any){
     return(
         <>
-        <div className="mx-5 sm:mx-20"><h1 className="text-2xl font-bold">{title}</h1>
+        <div className="mx-5 sm:mx-20"><h1 className="text-xl font-bold">{title}</h1>
         <p>
         {dis}
         </p>
@@ -105,32 +105,32 @@ export default function Page() {
                 <div className="flex flex-wrap  justify-around items-center">
                     <ul className="list-disc">
                         <li className="my-4">
-                            <div className="font-bold text-2xl">Defining Scope & Planning</div>
+                            <div className="font-bold text-xl">Defining Scope & Planning</div>
 
                             <div>We work with you to define project scope, services, and deliverables, allocating resources like editors and designers</div>
                         </li>
                         <li className="my-4">
-                            <div className="font-bold text-xl">Scheduling</div>
+                            <div className="font-semibold text-xl">Scheduling</div>
                 
                             <div>We create timelines, monitor progress, address delays, and adjust schedules as needed.</div>
                         </li>
                         <li className="my-4">
-                            <div className="font-bold text-xl">Communication</div>
+                            <div className="font-semibold text-xl">Communication</div>
                             
                             <div>We act as a central point of contact, manage expectations, and resolve conflicts between teams.</div>
                         </li>
                         <li className="my-4">
-                            <div className="font-bold text-xl">Quality Assurance</div>
+                            <div className="font-semibold text-xl">Quality Assurance</div>
                            
                             <div>We establish quality control processes, conduct reviews, and ensure adherence to guidelines.</div>
                         </li>
                         <li className="my-4">
-                            <div className="font-bold text-xl">Budget & Risk Management</div>
+                            <div className="font-semibold text-xl">Budget & Risk Management</div>
                             
                             <div>We identify potential risks, develop mitigation strategies, and manage project budgets.</div>
                         </li>
                         <li className="my-4">
-                            <div className="font-bold text-xl">Post-Project Evaluation</div>
+                            <div className="font-semibold text-xl">Post-Project Evaluation</div>
                         
                             <div>We gather feedback, identify improvement areas, and optimize workflows leveraging technology.</div>
                         </li>

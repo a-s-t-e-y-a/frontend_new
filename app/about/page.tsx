@@ -22,16 +22,16 @@ export default function About() {
   return (
     <div className='bg-white text-gray-600'>
       <Navbar></Navbar>
-      <Image src={img3} alt=''  className='m-auto w-[100%]'></Image>
+      <Image src={img3} alt=''  className='m-auto w-[100%] h-[400px] object-cover'></Image>
 
       <div className="mx-auto w-4/5 px-4 ">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
-          <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
+          {/* <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
             <p className="text-xs font-semibold leading-normal md:text-sm">About the company</p>
-          </div>
+          </div> */}
           <p className="text-3xl font-bold text-gray-900 md:text-5xl md:leading-10">
-            Made with love, right here in India
+            ABOUT US
           </p>
           <p className="max-w-4xl text-base text-gray-600 md:text-xl">
             We, at eVC-Tech, are a team of professionals with experience in and exposure to all facets of content solutions and publishing services. Our services range from content production to transformation, enrichment, and even content development in some cases for clients as diverse as publishers, societies, government organizations, and data aggregators, among others. We draw our clientele from all parts of the globe.

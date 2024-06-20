@@ -42,24 +42,26 @@ export default function Page() {
             <Navbar>
             </Navbar>
                 <Image src={img14} alt="" className="w-[100%] "></Image>
-            <GridBackground>
-                <div className="flex flex-col items-center space-y-10 ">
+                <div className="flex flex-col justify-center items-center ">
+                
                     
-                    <h2 className="text-4xl mx-4 sm:text-6xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
+                    <h2 className="text-4xl mx-4 font-bold my-10 sm:text-6xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
                     <h3 className="text-2xl text-center">Give superpowers to your publishing lifecycle with our expert services team</h3>
+                   <Link href='/contact'>
                     <button
                         type="button"
-                        className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                        className="text-white my-5 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                         Contact Us
                     </button>
+                            </Link>
                 </div>
                 <div>
                     <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
+
                 </div>
-            </GridBackground>
 
             <h1 className="text-center font-bold bg-white text-black my-8  text-4xl">Content Production</h1>
             <h2 className=" text-center">We offer end-to-end content production services from full-service project management to pre-editing, copyediting, typesetting, proofreading, artwork services, etc.</h2>
@@ -100,35 +102,35 @@ export default function Page() {
             </div>
             <div className="container mx-auto   py-10">
                 <h2 className="text-2xl font-bold text-center mb-4">Our Services</h2>
-                <div className="flex flex-wrap gap-10 justify-around items-center">
+                <div className="flex flex-wrap  justify-around items-center">
                     <ul className="list-disc">
-                        <li className="my-10">
+                        <li className="my-4">
                             <div className="font-bold text-2xl">Defining Scope & Planning</div>
 
                             <div>We work with you to define project scope, services, and deliverables, allocating resources like editors and designers</div>
                         </li>
-                        <li className="my-10">
-                            <div className="font-bold text-2xl">Scheduling</div>
+                        <li className="my-4">
+                            <div className="font-bold text-xl">Scheduling</div>
                 
                             <div>We create timelines, monitor progress, address delays, and adjust schedules as needed.</div>
                         </li>
-                        <li className="my-10">
-                            <div className="font-bold text-2xl">Communication</div>
+                        <li className="my-4">
+                            <div className="font-bold text-xl">Communication</div>
                             
                             <div>We act as a central point of contact, manage expectations, and resolve conflicts between teams.</div>
                         </li>
-                        <li className="my-10">
-                            <div className="font-bold text-2xl">Quality Assurance</div>
+                        <li className="my-4">
+                            <div className="font-bold text-xl">Quality Assurance</div>
                            
                             <div>We establish quality control processes, conduct reviews, and ensure adherence to guidelines.</div>
                         </li>
-                        <li className="my-10">
-                            <div className="font-bold text-2xl">Budget & Risk Management</div>
+                        <li className="my-4">
+                            <div className="font-bold text-xl">Budget & Risk Management</div>
                             
                             <div>We identify potential risks, develop mitigation strategies, and manage project budgets.</div>
                         </li>
-                        <li className="my-10">
-                            <div className="font-bold text-2xl">Post-Project Evaluation</div>
+                        <li className="my-4">
+                            <div className="font-bold text-xl">Post-Project Evaluation</div>
                         
                             <div>We gather feedback, identify improvement areas, and optimize workflows leveraging technology.</div>
                         </li>

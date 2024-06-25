@@ -45,8 +45,8 @@ export default function Page() {
                 <div className="flex flex-col justify-center items-center ">
                 
                     
-                    <h2 className="text-4xl mx-4 font-bold my-10 sm:text-6xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
-                    <h3 className="text-2xl text-center">Give superpowers to your publishing lifecycle with our expert services team</h3>
+                    <h2 className="text-2xl  mx-4 font-bold my-10 sm:text-4xl text-purple-800  ">Publishing with industry <br />experts by your side</h2>
+                    <h3 className="text-xl text-center">Give superpowers to your publishing lifecycle with our expert services team</h3>
                    <Link href='/contact'>
                     <button
                         type="button"

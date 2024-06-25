@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-
+import evc from '@/public/evcLogo.jpg'
 export function Footer() {
   return (
     <section className="relative overflow-hidden py-10 text-black  bg-gray-100 mt-12">
@@ -8,8 +9,9 @@ export function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
-              
-                <span className="ml-4 text-lg font-bold">eVC-Tech</span>
+                
+              <Image src={evc} alt={'Logo'} className='h-[50px] w-[100px] ml-10'></Image>
+                {/* <span className="ml-4 text-lg font-bold">eVC-Tech</span> */}
               </div>
               <div className="flex items-center">
                 <svg

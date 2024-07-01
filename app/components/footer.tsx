@@ -10,7 +10,7 @@ export function Footer() {
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
                 
-              <Image src={evc} alt={'Logo'} className='h-[50px] w-[100px] ml-10'></Image>
+              <Image src={evc} alt={'Logo'} className='h-[100px] w-[200px] ml-10'></Image>
                 {/* <span className="ml-4 text-lg font-bold">eVC-Tech</span> */}
               </div>
               <div className="flex items-center">
@@ -30,44 +30,43 @@ export function Footer() {
                   No. 274, Sec-4, Vaishali, Gaziabad (Delhi-NCR), U.P. 201010, India
                 </p>
               </div>
-              <p className="text-sm text-gray-600">
-                &copy; Copyright 2024. All Rights Reserved by eVC-Tech.
-              </p>
+         
             </div>
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+          <div className="w-full p-6 md:w-1/2 lg:w-3/12">
   <div className="h-full">
-    <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500">
+    <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-center text-gray-500 ">
       Our Services
     </h3>
-    <ul>
-      <li className="mb-4">
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="services">
+    <ul className='sm:grid grid-cols-2 gap-x-6 text-center sm:text-left  nowrap'>
+      <li className="mb-4 m-auto ">
+        <a className="text-sm font-medium text-nowrap  text-gray-900 hover:text-gray-700 " href="services">
           Content Production
         </a>
       </li>
-      <li className="mb-4">
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/services">
+      <li className="mb-4 m-auto">
+        <a className="text-sm font-medium text-nowrap text-gray-900 hover:text-gray-700" href="/services">
           Project Management
         </a>
       </li>
-      <li className="mb-4">
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-transformation">
+      <li className="mb-4 m-auto">
+        <a className="text-sm font-medium text-nowrap text-gray-900 hover:text-gray-700" href="/content-transformation">
+
           Content Transformation
         </a>
       </li>
-      <li className="mb-4">
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-enrichment">
+      <li className="mb-4 m-auto">
+        <a className="text-sm font-medium text-nowrap text-gray-900 hover:text-gray-700" href="/content-enrichment">
           Content Enrichment
         </a>
       </li>
-      <li className='mb-4'>
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/content-development">
+      <li className='mb-4 m-auto'>
+        <a className="text-sm font-medium text-nowrap text-gray-900 hover:text-gray-700" href="/content-development">
           Content Development
         </a>
       </li>
-      <li>
-        <a className="text-sm font-medium text-gray-900 hover:text-gray-700" href="/software-solutions">
+      <li className="m-auto">
+        <a className="text-sm font-medium text-nowrap text-gray-900 hover:text-gray-700" href="/software-solutions">
           Software solution
         </a>
       </li>
@@ -76,12 +75,12 @@ export function Footer() {
 </div>
 <div className="w-full p-6 md:w-1/2 lg:w-2/12">
   <div className="h-full">
-    <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500">
+    <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500 text-center">
       Contact Info
     </h3>
     <ul>
-      <li className="mb-4">
-        <a className="text-base font-medium text-gray-900 hover:text-gray-700" href="#">
+      <li className="mb-4 text-center">
+        <a className="text-base text-center font-medium text-gray-900 hover:text-gray-700 " href="#">
           info@evc-tech.com
         </a>
       </li>
@@ -91,6 +90,9 @@ export function Footer() {
 
         </div>
       </div>
+           <p className="text-sm text-center mt-8 text-gray-600 w-screen">
+                &copy; Copyright 2024. All Rights Reserved by eVC-Tech.
+              </p>
     </section>
   )
 }

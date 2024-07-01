@@ -6,7 +6,6 @@ const prisma = new PrismaClient()
 const DynamicFormSchema = z.object({
   id: z.string().optional(), // Assuming this will be auto-generated
   heading: z.string().min(1, { message: "Heading is required" }),
-  createdAt: z.date(), // Zod will validate date objects, adjust accordingly if using a string
   by: z.string().optional(),
   Location: z.string().min(1, { message: "Location is required" }),
   shift: z.string().min(1, { message: "Shift is required" }),

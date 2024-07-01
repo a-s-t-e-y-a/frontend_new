@@ -46,7 +46,7 @@ model Form {
 model DynamicForm {
   id             String   @id @default(auto()) @map("_id") @db.ObjectId
   heading        String
-  createdAt      DateTime
+  createdAt      DateTime  @default(now())
   by             String?
   Location       String
   shift          String

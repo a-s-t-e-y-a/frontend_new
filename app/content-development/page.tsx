@@ -5,22 +5,25 @@ import img1 from "@/public/ce_1-1.jpg"
 import img2 from "@/public/ce_2.jpg"
 import img3 from "@/public/ce_3.jpg"
 import img4 from "@/public/tras.jpg"
+import img5 from "@/public/content_development.jpg"
 import { Footer } from "../components/footer";
 export default function ContentDevelopmentPage(){
     return(
         <div className="bg-white text-black px-5 sm:px-0">
             <Navbar></Navbar>
-            <GridBackground>
-                <h1 className="text-purple-800">Content Development</h1>
+            <Image src={img5} alt="content development" className="w-full "></Image>
+            <div className="flex flex-col px-5  sm:px-0 justify-center items-center ">
+
+                <h1 className="text-purple-800 text-wrap text-3xl sm:text-6xl font-extrabold mt-5 sm:my-10">Content Development</h1>
                 <div className="flex-wrap gap-10 hidden sm:flex ">
                     <Image src={img1} alt="" className="scale-75"></Image>
                     <Image src={img2} alt="" className="scale-75"></Image>
                     <Image src={img3} alt="" className="scale-75"></Image>
 
                 </div>
-            </GridBackground>
+         </div>
             <div className="">
-    <h2 className="text-4xl font-bold text-center mt-20">Content Writing and Copywriting</h2>
+    <h2 className="text-xl sm:text-4xl font-bold text-center mt-10 sm:mt-20">Content Writing and Copywriting</h2>
     <div className="w-full sm:w-1/2 mt-10 m-auto">
         Our content writing and copywriting process goes through several steps, and the key ones to note are as follows:
         <ul className="list-disc m-5">

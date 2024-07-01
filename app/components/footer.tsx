@@ -1,26 +1,17 @@
+import Image from 'next/image'
 import React from 'react'
-
+import evc from '@/public/evcLogo.jpg'
 export function Footer() {
   return (
-    <section className="relative overflow-hidden py-10  bg-gray-100 mt-12">
+    <section className="relative overflow-hidden py-10 text-black  bg-gray-100 mt-12">
       <div className="relative z-10   px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 50 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M25 2C13.4687 2 3 12.4687 3 25C3 37.5313 13.4687 48 25 48C36.5313 48 47 37.5313 47 25C47 12.4687 36.5313 2 25 2ZM25 46C16.7909 46 9.5 38.7909 9.5 30.5C9.5 22.2091 16.7909 15 25 15C33.2091 15 40.5 22.2091 40.5 30.5C40.5 38.7909 33.2091 46 25 46ZM25 4C18.3137 4 13 9.31371 13 15.5C13 21.6863 18.3137 27 25 27C31.6863 27 37 21.6863 37 15.5C37 9.31371 31.6863 4 25 4Z"
-                    fill="black"
-                  />
-                </svg>
-                <span className="ml-4 text-lg font-bold">eVC-Tech</span>
+                
+              <Image src={evc} alt={'Logo'} className='h-[50px] w-[100px] ml-10'></Image>
+                {/* <span className="ml-4 text-lg font-bold">eVC-Tech</span> */}
               </div>
               <div className="flex items-center">
                 <svg

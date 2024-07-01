@@ -6,22 +6,25 @@ import Link from 'next/link';
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { MeteorsCard } from '../components/meteor2';
+import Image from 'next/image';
+import img1 from "@/public/careers-1.jpg"
 // import { Meteors } from '../components/ui/meteors';
 
 export default function Careers() {
     return (
         <div className="text-black  bg-white">
             <Navbar></Navbar>
-            <GridBackground>
-                <h1 className="text-black">Careers</h1>
-                <button
+            <Image src={img1} alt='Software Solution' className='w-full'></Image>
+            <div className="flex flex-col justify-center items-center ">
+                <h1 className="text-purple-800 text-wrap text-3xl sm:text-6xl font-extrabold mt-5 sm:my-10">Careers</h1>
+                {/* <button
                     type="button"
                     className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
                 >
                     Learn more
-                </button>
-            </GridBackground>
-            <h1 className='text-4xl font-bold mt-10 text-center'>Job Openings</h1>
+                </button> */}
+            </div>
+            <h1 className='text-2xl font-bold mt-10 text-center'>Job Openings</h1>
             <div className='flex flex-wrap gap-10 w-full sm:w-2/3 m-auto my-20 justify-center'>
                 <MeteorsCard title='Copyeditors and Proofreaders' dis="Work on the frontend...11 to 3 years experience with working knowledge of CMoS, AMA" link="/form"></MeteorsCard>
                 {/* <MeteorsCard title='Backend Developer' dis="Work on the backend..." link="/apply/frontend"></MeteorsCard> */}

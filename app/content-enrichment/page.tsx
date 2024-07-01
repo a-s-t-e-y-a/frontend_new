@@ -8,23 +8,25 @@ import img3 from "@/public/cen3.jpg"
 import img4 from "@/public/annie-spratt-_dAnK9GJvdY-unsplash.jpg"
 import img5 from "@/public/scott-graham-OQMZwNd3ThU-unsplash.jpg"
 import img6 from "@/public/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
+import img7 from "@/public/content_enrichment.jpg"
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 
 export default function ConententEnrichmentPage() {
     return (
         <div className="bg-white text-black px-5 sm:px-0">
             <Navbar></Navbar>
-            <GridBackground>
-                <h2 className="text-purple-800">Content Enrichment</h2>
+            <Image src={img7} alt="" className="w-full"></Image>
+            <div className="flex flex-col justify-center items-center ">
+                <h2 className="text-purple-800 text-3xl sm:text-6xl font-extrabold my-5 sm:my-10 ">Content Enrichment</h2>
                 <div className="hidden sm:flex flex-wrap scale-75 gap-10 ">
                     <Image src={img1} alt={""} className="rounded-full"></Image>
                     <Image src={img2} alt={""} className="rounded-full"></Image>
                     <Image src={img3} alt={""} className="rounded-full"></Image>
                 </div>
-            </GridBackground>
-            <div className="flex flex-wrap justify-center align-middle gap-10 my-20">
+            </div>
+            <div className="flex flex-wrap justify-center align-middle gap-10 my-10 sm:my-20">
                 <div className="w-full sm:w-1/3 ">
-                    <h1 className="text-4xl font-bold mb-10 text-pretty">Abstracting and Indexing</h1>
+                    <h1 className="text-xl sm:text-4xl font-bold mb-10 text-pretty">Abstracting and Indexing</h1>
                     <p className="text-justify">Understanding the objective of the final product and applying the best comprehension skills to pick out the right words and sentences to construct the most appropriate abstract and index is key to effective content publication. It provides readers with a window for a quick glance through the content and quick access to essential information based on which they may determine whether or not to read the entire content.
 
                         Our SMEs from various disciplines of STM and humanities work to provide abstracting and indexing services for all types of publications, both online and print.
@@ -93,5 +95,6 @@ export default function ConententEnrichmentPage() {
             <Footer></Footer>
 
         </div>
+    
     )
 }

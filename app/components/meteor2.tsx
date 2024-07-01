@@ -35,7 +35,7 @@ export function MeteorsCard({title,dis,link}:any) {
           <Link href={link}>
           
           <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-            Explore
+            Apply now
           </button>
           </Link>
 

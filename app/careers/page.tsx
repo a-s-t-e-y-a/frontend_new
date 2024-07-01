@@ -35,13 +35,13 @@ export default function Careers() {
       <h1 className="text-2xl font-bold mt-10 text-center">Job Openings</h1>
       <div className="flex flex-wrap gap-10 w-full sm:w-2/3 m-auto my-20 justify-center">
       {
-        data.data.map((info:any)=>{
+        data.data.map((info:any, index:number)=>(
             <MeteorsCard
+            key={index}
             title={info.heading}
-            dis="Work on the frontend...11 to 3 years experience with working knowledge of CMoS, AMA"
             link="/form"
           ></MeteorsCard>
-        })
+        ))
       }
        
       </div>

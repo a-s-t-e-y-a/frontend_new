@@ -42,3 +42,27 @@ model Form {
   number         String
   message        String
 }
+
+model DynamicForm {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  heading        String
+  createdAt      DateTime
+  by             String?
+  Location       String
+  shift          String
+  Job_type       String
+  workspace      String
+  applyJobs      ApplyJob[]
+}
+
+model ApplyJob {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  full_name      String
+  email          String
+  phone          String
+  coverLetter    String
+  cv_link        String
+  boolean        String
+  dynamicFormId  String @db.ObjectId
+  dynamicForm    DynamicForm @relation(fields: [dynamicFormId], references: [id])
+}
